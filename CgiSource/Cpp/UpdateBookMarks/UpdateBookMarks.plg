@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: UpdateBookMarks - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP100.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/UpdateBookMarks.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\UpdateBookMarks\UpdateBookMarks.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP100.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP101.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB kernel32.lib libsybdb.lib cgicc.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib Connections_TemplatesLib.lib SendMailBlatLib.lib LinkMapLib.lib TracingAndTimingLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/UpdateBookMarks.pdb" /debug /machine:I386 /nodefaultlib /out:"D:\Required\Shared\cgi-bin\UpdateBookMarks.exe" /pdbtype:sept 
+.\Debug\UpdateBookMarks.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP101.tmp"
+<h3>Output Window</h3>
+Compiling...
+UpdateBookMarks.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+UpdateBookMarks.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

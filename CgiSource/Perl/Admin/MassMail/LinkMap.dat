@@ -1,0 +1,68 @@
+################################## USER ######################################
+#                      LinkMap.dat Usage Directions
+#
+#  1. LinkMap.dat is a configuration file containing Key/Value pairs
+#  2. Left  column = Key
+#  3. Right column = Value
+#  4. No spaces are allowed in neither Keys nor Values
+#  5. Lines beginning with the Number Sign (#) are ignored
+#  6. Each group of Key/Value pairs should have a title decribing its purpose
+#  7. For values containing spaces enclose it in []
+#
+###############################################################################
+
+# KEY			VALUE
+
+######### Debugging #############
+SYSTEM			GloabalAdmin_MassMail
+
+######### Database Login #############
+DBNAME			DELL
+DBUSER			sa
+DBPWD			citrix
+
+######### All Site Root URLs #############
+Israeli_Connections_ROOT	http://216.205.68.43
+Persian_Connections_ROOT	http://216.205.68.44
+Manhattan_Connections_ROOT	http://216.205.68.45
+Connections_Test_ROOT		http://216.205.68.45:1900
+Personals_Connections_ROOT	http://216.205.68.46
+
+######### All Site DB name to Web name #############
+Israeli_Connections_NAME	www.israeliconnections.com
+Persian_Connections_NAME	www.persianconnections.com
+Manhattan_Connections_NAME	www.manhattanconnections.com
+Connections_Test_NAME		www.connectionstest.com
+Personals_Connections_NAME	www.personalsconnections.com
+
+######### All Site DB name to Email name #############
+Israeli_Connections_EMAIL	Admin@israeliconnections.com
+Persian_Connections_EMAIL	Admin@persianconnections.com
+Manhattan_Connections_EMAIL	Admin@manhattanconnections.com
+Connections_Test_EMAIL		Admin@connectionstest.com
+Personals_Connections_EMAIL	Admin@personalsconnections.com
+
+######### Web Page Text #############
+EMAIL			Admin@personalsconnections.com
+
+######### Blat #############
+SMTP_HOST		138.89.13.95
+BLAT_PATH		D:/Required
+
+######### SpamFromMailingListDB.pl #############
+#########     Spam Paramaters      #############
+
+SPAM_WRITING_FROM		israeliconnections.com
+SPAM_RECOVERY_FILE		NOT.html
+SPAM_BCC_EVERY			1
+SPAM_TOTAL_MAIL_TO_SEND		3
+SPAM_START_AFTER_MAIL_COUNT	0
+SPAM_TEST_MODE			1
+SPAM_RETURN_MAIL		Admin@israeliconnections.com
+SPAM_TEST_MAIL			jatlast@hotmail.com
+SPAM_BCC_MAIL			baumbach@bellatlantic.net
+SPAM_CGIBIN			http://216.205.68.45:1900/admin/cgi-bin
+
+######### Local Paths #############
+LOG_FOLDER		D:/Required/Log
+

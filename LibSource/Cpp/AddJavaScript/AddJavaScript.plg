@@ -1,0 +1,186 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AddJavaScriptLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP138E.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/AddJavaScriptLib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\AddJavaScript\AddJavaScript.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP138E.tmp" 
+Creating command line "link.exe -lib /nologo /out:"D:\MyData\Personal\Projects\LIB_Global\AddJavaScriptLib.lib"  .\Release\AddJavaScript.obj "
+<h3>Output Window</h3>
+Compiling...
+AddJavaScript.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+AddJavaScriptLib.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ConnectionsFunctionsLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP138F.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/ConnectionsFunctionsLib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\ConnectionsFunctions\ConnectionsFormLayout.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP138F.tmp" 
+Creating command line "link.exe -lib /nologo /out:"D:\MyData\Personal\Projects\LIB_Global\ConnectionsFunctionsLib.lib"  .\Release\ConnectionsFormLayout.obj "
+<h3>Output Window</h3>
+Compiling...
+ConnectionsFormLayout.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+ConnectionsFunctionsLib.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: Connections_TemplatesLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1390.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/Connections_TemplatesLib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\Connections_Templates\Connections_Templates.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1390.tmp" 
+Creating command line "link.exe -lib /nologo /out:"D:\MyData\Personal\Projects\LIB_Global\Connections_TemplatesLib.lib"  .\Release\Connections_Templates.obj "
+<h3>Output Window</h3>
+Compiling...
+Connections_Templates.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+Connections_TemplatesLib.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DB_Table_BaseLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1391.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/DB_Table_BaseLib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\About_Info.cpp"
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\AdvancedSearch_Info.cpp"
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\Billing_Info.cpp"
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\Contact_Info.cpp"
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\DB_Table_Base.cpp"
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\Login_Info.cpp"
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\Personal_Info.cpp"
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\Profile_Info.cpp"
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\ReadMail_Info.cpp"
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\SimpleSerach_Info.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1391.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1392.tmp" with contents
+[
+/nologo /out:"D:\MyData\Personal\Projects\LIB_Global\DB_Table_BaseLib.lib" 
+.\Release\About_Info.obj
+.\Release\AdvancedSearch_Info.obj
+.\Release\Billing_Info.obj
+.\Release\Contact_Info.obj
+.\Release\DB_Table_Base.obj
+.\Release\Login_Info.obj
+.\Release\Personal_Info.obj
+.\Release\Profile_Info.obj
+.\Release\ReadMail_Info.obj
+.\Release\SimpleSerach_Info.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1392.tmp"
+<h3>Output Window</h3>
+Compiling...
+About_Info.cpp
+AdvancedSearch_Info.cpp
+Billing_Info.cpp
+Contact_Info.cpp
+DB_Table_Base.cpp
+Login_Info.cpp
+Personal_Info.cpp
+Profile_Info.cpp
+ReadMail_Info.cpp
+SimpleSerach_Info.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+DB_Table_BaseLib.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LinkMapLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1393.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/LinkMapLib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\LinkMap\LinkMap.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1393.tmp" 
+Creating command line "link.exe -lib /nologo /out:"D:\MyData\Personal\Projects\LIB_Global\LinkMapLib.lib"  .\Release\LinkMap.obj "
+<h3>Output Window</h3>
+Compiling...
+LinkMap.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+LinkMapLib.lib - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SendMailBlat - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1394.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/SendMailBlat.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\SendMailBlat\Driver.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1394.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1395.tmp" with contents
+[
+user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/SendMailBlat.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\SendMailBlat.exe" 
+.\Release\Driver.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1395.tmp"
+<h3>Output Window</h3>
+Compiling...
+Driver.cpp
+Linking...
+LINK : fatal error LNK1104: cannot open file "TracingAndTimingLib.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+SendMailBlat.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: TracingAndTimingLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1396.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/TracingAndTimingLib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\TracingAndTiming\TracingAndTiming.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP1396.tmp" 
+Creating command line "link.exe -lib /nologo /out:"D:\MyData\Personal\Projects\LIB_Global\TracingAndTimingLib.lib"  .\Release\TracingAndTiming.obj "
+<h3>Output Window</h3>
+Compiling...
+TracingAndTiming.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+TracingAndTimingLib.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

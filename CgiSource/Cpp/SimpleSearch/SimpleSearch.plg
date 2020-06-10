@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SimpleSearch - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP113.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/SimpleSearch.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\SimpleSearch\SimpleSearch.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP113.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP114.tmp" with contents
+[
+user32.lib OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/SimpleSearch.pdb" /debug /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\SimpleSearch.exe" /pdbtype:sept 
+.\Debug\SimpleSearch.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP114.tmp"
+<h3>Output Window</h3>
+Compiling...
+SimpleSearch.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+SimpleSearch.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

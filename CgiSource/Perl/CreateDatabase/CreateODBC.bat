@@ -1,0 +1,1 @@
+wscript C:\Inetpub\wwwroot\DynamicODBC.vbs

@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<TITLE>Connecitons Color Scheme Tester</TITLE>
+
+</HEAD>
+<BODY>
+<SCRIPT type="text/javascript" language="javascript">
+<!--
+      var myWindow = window.open('HtmlColorList.html', 'ColorList', 'toolbar=yes, location=yes, scrollbars=yes, resizeable=yes, status=yes, width=900, height=600')
+      myWindow.document.close()
+// -->
+
+
+</SCRIPT>
+
+          <FORM name=theForm method="POST" action="cgi-bin/CreateLogin.exe" onsubmit="return checkForm(this)">
+            <TABLE border="0" width="466" cellspacing="3" cellpadding="3">
+              <!--    user_name  -->
+              <TR>
+                <TD width="114" height="25" align="right">
+                  <FONT size="2" face="Arial, Helvetica, sans-serif"><FONT color="Red"><STRONG>*</STRONG></FONT>User Name:</FONT>
+                </TD>
+                <TD width="314" height="25" align="left">
+                  <FONT face="Arial, Helvetica, sans-serif"> <INPUT type="text" name="user_name" size="20" maxlength="32"> <FONT size="2" color="#FF0000">Others will see this name</FONT></FONT>
+                </TD>
+              </TR>
+              <!--    password  -->
+              <TR>
+                <TD width="114" height="25" align="right">
+                  <P>
+                     <FONT size="2" face="Arial, Helvetica, sans-serif"><FONT color="Red"><STRONG>*</STRONG></FONT>Password:</FONT>
+                  </P>
+                </TD>
+                <TD width="314" height="25" align="left">
+                  <P>
+                     <FONT face="Arial, Helvetica, sans-serif"> <INPUT type="password" name="password" size="20" maxlength="8"> <FONT size="2" color="#FF0000"> Store for future use</FONT></FONT>
+                  </P>
+                </TD>
+              </TR>
+              <!--    verify_password   -->
+              <TR>
+                <TD width="114" height="25" align="right">
+                  <P>
+                     <FONT size="2" face="Arial, Helvetica, sans-serif"><FONT color="Red"><STRONG>*</STRONG></FONT>Verify Password:</FONT>
+                  </P>
+                </TD>
+                <TD width="314" height="25" align="left">
+                  <P>
+                     <FONT face="Arial, Helvetica, sans-serif"> <INPUT type="password" name="verify_password" size="20" maxlength="8"> <FONT size="2" color="#FF0000"> Compare password inputs</FONT></FONT>
+                  </P>
+                </TD>
+              </TR>
+              <!--    password_hint -->
+              <TR>
+                <TD width="114" height="22" align="right">
+                  <FONT size="2" face="Arial, Helvetica, sans-serif"><FONT color="Red"><STRONG>*</STRONG></FONT>Mother's Maiden Name:</FONT>
+                </TD>
+                <TD width="314" height="22" align="left">
+                  <FONT face="Arial, Helvetica, sans-serif"> <INPUT name="password_hint" size="20"> <FONT color="#FF0000" size="2">To get your password</FONT></FONT>
+                </TD>
+              </TR>
+              <!--    email -->
+              <TR>
+                <TD width="114" height="37" align="right">
+                  <P>
+                     <FONT size="2" face="Arial, Helvetica, sans-serif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email:</FONT>
+                  </P>
+                </TD>
+                <TD width="314" height="37" align="left">
+                  <P>
+                     <FONT face="Arial, Helvetica, sans-serif"> <INPUT name="email" size="20"> <FONT color="#FF0000" size="2">For new mail notification</FONT></FONT>
+                  </P>
+                </TD>
+              </TR>
+              <!--    Sex   -->
+              <TR>
+                <TD width="114" height="25" align="right">
+                  <FONT size="2" face="Arial, Helvetica, sans-serif"><FONT color="Red"><STRONG>*</STRONG></FONT>Sex</FONT>
+                </TD>
+                <TD width="314" height="25" align="left">
+                  <SELECT size="1" name="HTML_NAV_BGCOLOR">
+                    <OPTION selected value="0">
+                      Please select
+                    </OPTION>
+                    <OPTION value="#F5F5E3">
+                      "#F5F5E3"
+                    </OPTION>
+                    <OPTION value="#D1D1BF">
+                      
+                    </OPTION>
+                  </SELECT>
+                </TD>
+              </TR>
+            </TABLE>
+
+        <TD>
+          <A href="javascript:openConnecitonExampleWindow('LinkMapTest.html')">View color scheme...</A>
+        </TD>
+
+
+
+<SCRIPT type="text/javascript" language="javascript">
+<!--
+function openConnecitonExampleWindow(NewWindowName) 
+{
+      var myWindow = window.open(NewWindowName, 'newWin', 'toolbar=yes, location=yes, scrollbars=yes, resizeable=yes, status=yes, width=900, height=600')
+      myWindow.document.write("\
+      <HTML>\
+        <HEAD>\
+          <TITLE>\
+            HTML_TITLE\
+          </TITLE>\
+        </HEAD>\
+        <BODY>\
+          <TABLE border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"800\">\
+            <TR align=\"left\">\
+              <TD colspan=\"2\" bgcolor=\"" + theForm.HTML_NAV_BGCOLOR.value + "\" height=\"38\" valign=\"middle\">\
+                <A href=\"ROOT/index.html\"><IMG alt=\"Persian Dating Home\" src=\"/IMAGES/LOGO\" border=\"0\" width=\"500\" height=\"40\"></A>\
+              </TD>\
+            </TR>\
+            <TR>\
+              <TD bgcolor=\"#F5F5E3\" valign=\"top\" width=\"150\" height=\"394\">\
+                <TABLE border=\"0\" cellpadding=\"3\" cellspacing=\"3\" width=\"150\">\
+                  <TR>\
+                    <TD>\
+                      <A href=\"ROOT\">ROOT</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"IMAGES\">IMAGES</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"PICTURES\">PICTURES</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"CGIBIN\">CGIBIN</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"ADMIN_CGIBIN\">ADMIN_CGIBIN</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"mailto:EMAIL\">EMAIL</A>\
+                    </TD>\
+                  </TR>\
+                </TABLE>\
+              </TD>\
+              <TD width=\"667\" bgcolor=\"#D1D1BF\" height=\"394\" valign=\"top\">\
+                SYSTEM\
+              </TD>\
+            </TR>\
+            <TR>\
+              <TD colspan=\"2\" bgcolor=\"#BDD2D2\" height=\"23\" valign=\"middle\">\
+                <FONT size=\"4\" face=\"Arial, Helvetica, sans-serif\">WHICH_CONNECTIONS.com</FONT> <FONT face=\"Arial, Helvetica, sans-serif\" size=\"2\"><BR>\
+                 Copyright &copy; COPYRIGHT_YEAR WHICH_CONNECTIONS.com. All rights reserved.</FONT>\
+              </TD>\
+            </TR>\
+          </TABLE>\
+        </BODY>\
+      </HTML>\
+      ")
+      myWindow.document.close()
+}
+// -->
+</SCRIPT>
+
+</BODY>
+</HTML>

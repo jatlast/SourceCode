@@ -1,0 +1,866 @@
+<HTML>
+  <!-- aircoutappli.pgd --><!-- BOX: 0016 --><!-- SL: 880611 -->
+  <HEAD>
+    <META name="generator" content="HTML Tidy, see www.w3.org"><!-- Production -->
+<SCRIPT type="text/javascript" language="JavaScript">
+<!--
+submitted = 0;
+pagePosn = history.length;
+function checkDoubleClick () {
+if (!submitted) {
+submitted = 1;
+return true;
+} else {
+submitted = 0;
+if (history.length > pagePosn) {
+return true
+} else {
+return false;
+}
+}
+}
+
+var windowNameArray = null
+var windowPntrArray = null
+var browserType = "Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)"
+
+function launchWindow( url, HT, WD ) {
+var windowOptions
+var myLocation = url
+var WN = "newWindow"
+var AR = "yes"
+var TB = "no"
+var LC = "no"
+var SB = "no"
+var DR = "no"
+var ST = "no"
+var MB = "no"
+var RS = "yes"
+var CH = "yes"
+var PX = ""
+var PY = ""
+switch( arguments.length ) {
+case 16:
+case 15: PY = arguments[14];
+case 14: PX = arguments[13];
+case 13: CH = arguments[12];
+case 12: RS = arguments[11];
+case 11: MB = arguments[10];
+case 10: ST = arguments[9];
+case  9: DR = arguments[8];
+case  8: SB = arguments[7];
+case  7: LC = arguments[6];
+case  6: TB = arguments[5];
+case  5: AR = arguments[4];
+case  4: WN = arguments[3];
+}
+
+windowOptions  = "height="
+windowOptions += HT
+windowOptions += ",width="
+windowOptions += WD
+windowOptions += ",alwaysRaised="
+windowOptions += AR
+windowOptions += ",toolbar="
+windowOptions += TB 
+windowOptions += ",location="
+windowOptions += LC 
+windowOptions += ",scrollbars="
+windowOptions += SB 
+windowOptions += ",directories="
+windowOptions += DR 
+windowOptions += ",status="
+windowOptions += ST
+windowOptions += ",menubar="
+windowOptions += MB 
+windowOptions += ",resizable="
+windowOptions += RS 
+windowOptions += ",copyhistory="
+windowOptions += CH
+windowOptions += ",screenX="
+windowOptions += PX
+windowOptions += ",screenY="
+windowOptions += PY
+windowOptions += ",left="
+windowOptions += PX
+windowOptions += ",top="
+windowOptions += PY
+if( ! windowNameArray ) {
+windowNameArray = new Array()
+windowPntrArray = new Array()
+}
+for( index=0; index < windowNameArray.length; ++index ) {
+if( windowNameArray[index] == WN ) {
+break
+}
+}
+
+var msieBrowser = navigator.appName.indexOf("Microsoft") != -1 
+if( ! windowPntrArray[index] || windowPntrArray[index].closed  ) {
+windowNameArray[index] = WN
+windowPntrArray[index] = window.open( myLocation, WN ,windowOptions )
+} else {
+if( msieBrowser ) {
+windowPntrArray[index].close()
+while( ! windowPntrArray[index].closed )
+{}
+windowPntrArray[index] = window.open( myLocation, WN ,windowOptions )
+} else {
+windowPntrArray[index].focus()
+}
+}
+}
+
+function closeLaunchedWindows() {
+var msieBrowser = navigator.appName.indexOf("Microsoft") != -1 
+for( index=0; index < windowNameArray.length; ++index ) {
+windowPntrArray[index].close()
+if( msieBrowser ) {
+while( ! windowPntrArray[index].closed )
+{}
+}
+}
+windowPntrArray.length = 0
+windowNameArray.length = 0
+}
+//-->
+</SCRIPT>
+<STYLE type="text/css">
+<!--
+th {font-family:arial,helvetica;}
+
+#instr_txt {color:#6699cc}
+#notice {color:#0066cc}
+#blue {color:#0066cc}
+#white {color:#ffffff}
+#hilite {color:#ff9933;font-weight:bold;}
+#unavail {color:#cc0000;font-weight:bold;}
+.content {font-family:arial,helvetica;color:#000000;font-size:x-small;}
+.content-lg {font-family:arial,helvetica;color:#000000;font-size:small;}
+.content-sm {font-family:arial,helvetica;color:#000000;font-size:xx-small;}
+.content-fxd {font-family:arial,helvetica;color:#000000;font-size:13px;}
+.content-fxd-sm {font-family:arial,helvetica;color:#000000;font-size:10px;}
+.content-fxd-lg {font-family:arial,helvetica;color:#000000;font-size:17px;}
+.category-head-sm-wht {font-family:arial,helvetica;color:#ffffff;font-size:10px;}
+.category-head-wht {font-family:arial,helvetica;color:#ffffff;font-size:12px;font-weight:bold;}
+.category-head {font-family:arial,helvetica;color:#000000;font-size:12px;font-weight:bold;}
+.head {font-family:arial,helvetica;color:#0066cc;font-size:17px;font-weight:bold;}
+.subhead {font-family:arial,helvetica;color:#6699cc;font-size:14px;font-weight:bold;}
+.form {font-family:courier,monospace;color:#000000;font-size:15px;}
+.tabs {font-family:arial,helvetica;color:#003399;font-size:12px;font-weight:bold;background-color:#ffcc66;}
+#subtabs {font-family:arial,helvetica;font-size:12px;color:#ffffff;background-color:#0066cc;}
+#tab-lit {color:#ffffff;background-color:#0066cc;}
+B {font-weight:bold}
+A:visited {color:#0066CC}
+A:active {color:#FF6600}
+A {color: #003399}
+
+.footerlinks {font-size:11px;font-family:arial,helvetica;}
+.plus2 {font-size:21px;color:#000000;font-family:arial,helvetica;}
+.plus1 {font-size:19px;color:#000000;font-family:arial,helvetica;}
+.default {font-size:17px;color:#000000;font-family:arial,helvetica;}
+.minus1 {font-size:14px;color:#000000;font-family:arial,helvetica;}
+.minus2 {font-size:11px;color:#000000;font-family:arial,helvetica;}
+.plus1blue {font-size:19px;color:#6699cc;font-family:arial,helvetica;}
+.defaultblue {font-size:17px;color:#6699cc;font-family:arial,helvetica;}
+.minus1blue {font-size:14px;color:#6699cc;font-family:arial,helvetica;}
+.plus1red {font-size:19px;color:#cc0000;font-family:arial,helvetica;}
+.defaultred {font-size:17px;color:#cc0000;font-family:arial,helvetica;}
+.minus1red {font-size:14px;color:#cc0000;font-family:arial,helvetica;}
+.minus2red {font-size:11px;color:#cc0000;font-family:arial,helvetica;}
+.plus1white {font-size:19px;color:#ffffff;font-family:arial,helvetica;}
+.defaultwhite {font-size:17px;color:#ffffff;font-family:arial,helvetica;}
+.minus1white {font-size:14px;color:#ffffff;font-family:arial,helvetica;}
+.whitehead {font-size:14px;font-weight:bold;color:#ffffff;font-family:arial,helvetica;}
+.valrateminus1 {font-size:14px;color:#0066cc;font-family:arial,helvetica;}
+.oldtoplinks {font-size:10px;font-family:arial,helvetica;}
+.pagetitle {font-size:19px;font-weight:bold;color:#000000;font-family:arial,helvetica;}
+.monospace {font-family:courier,monospace;color:#000000;font-size:15px;}
+
+td {font-family:arial,helvetica;}
+
+-->
+</STYLE>
+    <TITLE>
+    </TITLE>
+<STYLE type="text/css">
+<!--
+td {font-family:arial,helvetica;color:#000000;font-size:x-small;}
+-->
+</STYLE>
+  </HEAD>
+  <BODY bgcolor="#ffffff" link="#000080" vlink="#000080" alink="#000080" text="#000000" leftmargin="0" marginwidth="0" topmargin="3" marginheight="3">
+    <TABLE name="nav_container" border="0" cellspacing="0" cellpadding="0" width="100%">
+      <TR>
+        <TD width="100%" valign="top">
+          <TABLE name="calendar" border="0" cellpadding="0" cellspacing="0">
+            <TR>
+              <TD>
+                <TABLE name="month_name" width="100%" border="0" cellpadding="0" cellspacing="2">
+                  <TR>
+                    <TD align="middle" bgcolor="#ffdd55">
+                      <STRONG>December</STRONG>
+                    </TD>
+                  </TR>
+                </TABLE>
+                <TABLE name="filler" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <TR>
+                    <TD align="middle" bgcolor="#000000">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+                    </TD>
+                  </TR>
+                </TABLE>
+                <TABLE name="days" border="0" cellpadding="1" cellspacing="2" width="100%">
+                  <TR bgcolor="#0066cc">
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Su
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Mo
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Tu
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      We
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Th
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Fr
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Sa
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      1
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      2
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      3
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=4&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774388722811272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">4</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=5&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774389007511272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">5</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=6&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774389294011272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">6</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=7&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774389583411272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">7</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=8&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774389868011272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">8</A>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=9&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774390178411272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">9</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=10&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774390467611272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">10</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=11&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774390752311272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">11</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=12&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774391037711272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">12</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=13&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774391324511272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">13</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=14&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774391608111272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">14</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=15&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774391894911272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">15</A>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=16&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774392208911272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">16</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=17&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774392493311272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">17</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=18&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774392777011272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">18</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=19&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774393061711272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">19</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=20&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774393349711272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">20</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#9a9a9a" class="content-fxd-sm">
+                      X
+                    </TD>
+                    <TD align="middle" bgcolor="#9a9a9a" class="content-fxd-sm">
+                      X
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=23&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774393722711272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">23</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=24&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774394009311272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">24</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=25&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774394297211272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">25</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=26&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774394583311272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">26</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#9a9a9a" class="content-fxd-sm">
+                      X
+                    </TD>
+                    <TD align="middle" bgcolor="#9a9a9a" class="content-fxd-sm">
+                      X
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=29&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774394929311272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">29</A>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=30&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774395242711272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">30</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=12&amp;year_num=2001&amp;day=31&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774395527311272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">31</A>
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                  </TR>
+                </TABLE>
+                <TABLE name="filler" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <TR>
+                    <TD align="middle" bgcolor="#000000">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+                    </TD>
+                  </TR>
+                </TABLE>
+              </TD>
+              <TD bgcolor="#000000">
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+              </TD>
+              <TD>
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="10" height="1" border="0">
+              </TD>
+              <TD bgcolor="#000000">
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+              </TD>
+              <TD>
+                <TABLE name="filler" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <TR>
+                    <TD align="middle" bgcolor="#000000">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+                    </TD>
+                  </TR>
+                </TABLE>
+                <TABLE name="month_name" width="100%" border="0" cellpadding="0" cellspacing="2">
+                  <TR>
+                    <TD align="middle" bgcolor="#ffdd55">
+                      <STRONG>January</STRONG>
+                    </TD>
+                  </TR>
+                </TABLE>
+                <TABLE name="filler" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <TR>
+                    <TD align="middle" bgcolor="#000000">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+                    </TD>
+                  </TR>
+                </TABLE>
+                <TABLE name="days" border="0" cellpadding="1" cellspacing="2" width="100%">
+                  <TR bgcolor="#0066cc">
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Su
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Mo
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Tu
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      We
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Th
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Fr
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Sa
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=1&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774396797011272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">1</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=2&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774397079611272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">2</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=3&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774397367111272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">3</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=4&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774397653011272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">4</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=5&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774397938011272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">5</A>
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=6&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774398248911272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">6</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=7&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774398535811272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">7</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=8&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774398819811272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">8</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=9&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774399105611272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">9</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=10&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774399394511272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">10</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#00cc00" class="content-fxd-sm">
+                      <A href="http://dps1.travelocity.com:80/aircoutavail.ctl?avail_appli=P&amp;first_month=12&amp;last_month=2&amp;months_todisplay_list=12%201%202&amp;year_list=2001%202002%202002&amp;start_month_out=12&amp;start_year_out=2001&amp;month_num=1&amp;year_num=2002&amp;day=11&amp;sur_chrg=0&amp;brand_ind=0&amp;SEQ=100686774399682511272001&amp;LANG=EN&amp;last_pgd_page=aircoutappli.pgd">11</A>
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      12
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      13
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      14
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      15
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      16
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      17
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      18
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      19
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      20
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      21
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      22
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      23
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      24
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      25
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      26
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      27
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      28
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      29
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      30
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      31
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                  </TR>
+                </TABLE>
+              </TD>
+              <TD bgcolor="#000000">
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+              </TD>
+              <TD>
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="10" height="1" border="0">
+              </TD>
+              <TD bgcolor="#000000">
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+              </TD>
+              <TD>
+                <TABLE name="filler" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <TR>
+                    <TD align="middle" bgcolor="#000000">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+                    </TD>
+                  </TR>
+                </TABLE>
+                <TABLE name="month_name" width="100%" border="0" cellpadding="0" cellspacing="2">
+                  <TR>
+                    <TD align="middle" bgcolor="#ffdd55">
+                      <STRONG>February</STRONG>
+                    </TD>
+                  </TR>
+                </TABLE>
+                <TABLE name="days" border="0" cellpadding="1" cellspacing="2" width="100%">
+                  <TR bgcolor="#0066cc">
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Su
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Mo
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Tu
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      We
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Th
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Fr
+                    </TD>
+                    <TD align="middle" class="content-fxd-sm" id="white">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="14" height="1" border="0">
+                      <BR>
+                      Sa
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      1
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      2
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      3
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      4
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      5
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      6
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      7
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      8
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      9
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      10
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      11
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      12
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      13
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      14
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      15
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      16
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      17
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      18
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      19
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      20
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      21
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      22
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      23
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      24
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      25
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      26
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      27
+                    </TD>
+                    <TD align="middle" bgcolor="#dfdfdf" class="content-fxd-sm">
+                      28
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                  </TR>
+                  <TR>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                    <TD bgcolor="#dfdfdf" class="content-fxd-sm">
+                      &nbsp;
+                    </TD>
+                  </TR>
+                </TABLE>
+                <TABLE name="filler" width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <TR>
+                    <TD align="middle" bgcolor="#000000">
+                      <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+                    </TD>
+                  </TR>
+                </TABLE>
+              </TD>
+              <TD bgcolor="#000000">
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="1" border="0">
+              </TD>
+              <TD>
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="10" height="1" border="0">
+              </TD>
+            </TR>
+          </TABLE>
+          <TABLE name="legend" border="0" cellpadding="0" cellspacing="0">
+            <TR>
+              <TD colspan="9">
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="1" height="15" border="0">
+              </TD>
+            </TR>
+            <TR>
+              <TD>
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="25" height="1" border="0">
+              </TD>
+              <TD bgcolor="#dfdfdf">
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="12" height="1" border="0">
+              </TD>
+              <TD class="content-sm">
+                &nbsp;Fare not offered
+              </TD>
+              <TD>
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="8" height="1" border="0">
+              </TD>
+              <TD bgcolor="#00cc00">
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="12" height="1" border="0">
+              </TD>
+              <TD class="content-sm">
+                &nbsp;Seats available
+              </TD>
+              <TD>
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="8" height="1" border="0">
+              </TD>
+              <TD bgcolor="#9a9a9a">
+                <IMG src="http://rg.travelocity.com.edgesuite.net/graphics/spacer.gif" alt="" width="12" height="1" border="0">
+              </TD>
+              <TD class="content-sm">
+                &nbsp;Sold out
+              </TD>
+            </TR>
+          </TABLE>
+        </TD>
+      </TR>
+    </TABLE>
+    <!-- bottom line --><NOSCRIPT><INPUT type="hidden" name="javascript_turned_off" value="YES"></NOSCRIPT>
+  </BODY>
+</HTML>
+

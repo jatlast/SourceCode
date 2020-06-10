@@ -1,0 +1,384 @@
+2000-10-15  Stephen F. Booth  <sbooth@gnu.org>
+
+	* example/yourSource.cpp: Changed instances of 'Cgicc' to 'cgicc'
+	* demo/test.cpp: 'Cgicc' -> 'cgicc'
+	* demo/dns.cpp: 'Cgicc' -> 'cgicc'
+	* demo/testform.html: Updated e-mail address
+	* info/version.texi: Updated for 3.1.4
+	* README: 'Cgicc' -> 'cgicc'
+	* README.WIN: 'Cgicc' -> 'cgicc'
+	* AUTHORS: 'Cgicc' -> 'cgicc'
+	* NEWS: 'Cgicc' -> 'cgicc'
+	* Makefile.am: Removed reference to .spec file
+
+2000-10-07  Stephen F. Booth  <sbooth@gnu.org>
+
+	* demo/dns.cpp: Updated URL
+	* demo/test.cpp: Updated URL
+	* demo/testform.html: Updated URL
+	* demo/dns.cpp: Changed various instances of 'Cgicc' to 'cgicc'
+	* demo/test.cpp: Changed various instances of 'Cgicc' to 'cgicc'
+	* demo/testform.html: Changed various instances of 'Cgicc' to 'cgicc'
+	* info/cgi-classes.texinfo: Changed various instances of 'Cgicc' to 
+	'cgicc'
+	* info/cgicc.texinfo: Changed various instances of 'Cgicc' to 'cgicc'
+	* info/class-cgicc.texinfo: Changed various instances of 'Cgicc' to 
+	'cgicc'
+	* info/classes-html.texinfo: Changed various instances of 'Cgicc' to
+	'cgicc'
+	* info/html-classes.texinfo: Changed various instances of 'Cgicc' to
+	'cgicc'
+	* info/library-overview.texinfo: Changed various instances of 'Cgicc' 
+	to 'cgicc'
+	* info/tutorial.texinfo: Changed various instances of 'Cgicc' to 
+	'cgicc'
+	* support/cgicc.spec.in: Removed
+	* configure.in: Removed reference to cgicc.spec, version to 3.1.4
+	* cgicc/Makefile.am: Updated libtool version
+	* cgicc/HTMLAttributes.h: Updated copyright and mail info
+
+2000-09-21  Stephen F. Booth  <sbooth@gnu.org>
+
+	* demo/dns.cpp: Fix for http servers not running on port 80
+	(reported by qconnell@medic.up.ac.za)
+	* cgicc/HTMLElements.cpp: Changed 'for' for code symmetry
+	* cgicc/CgiEnvironment.cpp: Skip leading whitespace in cookie names
+	(reported by chaanho@netian.com)
+	* example/Makefile.in: Use "-Wl,--rpath" for linux
+	(reported by mail@jbrisbin.net)
+
+2000-07-02  Stephen F. Booth  <sbooth@gnu.org>
+
+	* cgicc/HTMLElements.h: Fix operator< for HTMLElement
+	(reported by as@globalplastics.com)
+
+2000-04-15  Stephen F. Booth  <sbooth@gnu.org>
+
+	* cgicc/CgiEnvironment.cpp: Fix typo, fctrl.h -> fcntl.h
+	(reported by cdanzl@cosy.sbg.ac.at)
+
+2000-04-10  Stephen F. Booth  <sbooth@gnu.org>
+
+	* Makefile.am: Added new dist-bzip2 target
+	* support/cgicc.spec.in: Fix typo
+	* example/Makefile.in: Use -rpath style as default
+	* example/README: Update for Makefile changes
+
+2000-04-07  Stephen F. Booth  <sbooth@gnu.org>
+
+	* cgicc/CgiEnvironment.cpp(CgiEnvironment): Use binary read mode on 
+	Win32 to prevent CR/LF conversion
+	* NEWS: Added items on multipart/form-data and Win32 CR/LF bugs
+	* configure.in: Updated version to 3.1.2
+	* cgicc/Makefile.am: Up libtool version to 2:1:1
+	* README.WIN: Removed note about MS IIS 4.0 (unnecessary)
+	* support/cgicc.spec.in: New file
+
+1999-10-05  Stephen F. Booth  <sbooth@gnu.org>
+
+	* cgicc/CgiDefs.h.in: Include "config.h", not "cgicc/config.h"
+	* example/Makefile.in: Fix -rpath opton for Linux
+
+1999-10-02  Stephen F. Booth  <sbooth@gnu.org>
+
+	* cgicc/Cgicc.cpp(parseFormInput): Fixed handling of
+ 	"multipart/form-data" to correctly extract the final item
+	(bug reported by gabe@bignet.com)
+
+1999-10-01  Stephen F. Booth  <sbooth@gnu.org>
+
+	* README.WIN: Added a note about MS IIS 4.0
+
+1999-09-30  Stephen F. Booth  <sbooth@gnu.org>
+
+	* info/Makefile.am: Added rules to generate HTML (texinfo-4.0)
+	* cgicc/Cgicc.h: Added typedefs for iterators
+	([const_]form_iterator, [const_]file_iterator)
+	* cgicc/Cgicc.cpp: Use above typedefs
+	* demo/test.cpp: Use typedefs, as above
+	* demo/dns.cpp: Use typedefs, as above
+	* info/class-cgicc.texinfo: Added documentation for iterator typedefs.
+	* info/tutorial.texinfo: Updated example to use iterator typedefs.
+	* info/cgicc.texinfo: Use @ifnottex instead of @ifinfo
+	* NEWS: Added item on iterators
+
+1999-09-27  Stephen F. Booth  <sbooth@gnu.org>
+
+	* demo/test.cpp: Changed "Remote Setdress" -> "Remote Address" in
+	HTML output.
+
+1999-09-22  Stephen F. Booth  <sbooth@gnu.org>
+
+	* cgicc/HTMLClasses.h: Added definition of link_, to be used
+	when namespaces are not in use (reported by flavpol@tin.it)
+	* demo/test.cpp: Add #define link link_ when namespaces not in use
+	* demo/dns.cpp: Add #define link link_ when namespaces not in use
+
+1999-08-31  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* configure.in: Automatically enable warnings for gcc
+	* cgicc/CgiEnvironment.h: Added usingHTTPS() method
+	* demo/test.cpp(dumpEnvironment): Added display for usingHTTPS()
+	* info/class-cgienv.texinfo: Added doc for usingHTTPS
+	* cgicc/Makefile.am: Up libtool version to 2:0:1
+
+1999-08-20  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/MStreamable.h: Added empty ctor and dtor
+	* cgicc/HTMLAttributes.cpp(HTMLAttribute::HTMLAttribute): Explicitly
+	initialize MStreamable
+	* cgicc/HTTPHeaders.cpp:(HTTPCookie::HTTPCookie): Explicitly
+	initialize MStreamable
+	* cgicc/HTTPHeaders.cpp(HTTPHeader::HTTPHeader): Explicitly 
+	initialize MStreamable
+	* cgicc/HTMLElements.cpp(HTMLElement::HTMLElement): Explicitly
+	initialize MStreamable
+	* cgicc/CgiEnvironment.h: Added method usingHTTPS()
+	* demo/test.cpp(main): Comment out argc, argv
+	* demo/dns.cpp(main): Comment out argc, argv
+
+1999-08-17  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* configure.in: Renamed USE_NAMESPACES to CGICC_USE_NAMESPACES
+	* cgicc/CgiDefs.h.in,HTMLClasses.h: Same.
+	* demo/dns.cpp,test.cpp: Same.
+	* example/yourSource.cpp: Same
+	* cgicc/HTMLElements.h: Added add(HTMLElement*) to HTMLElement and
+	HTMLElementList.
+	* cgicc/HTMLElements.cpp: Same.
+	* cgicc/MStreamable.h: Added CGICC_API in front of friend 
+	declaration (for MSVC++ 5.0).
+	* info/classes-html.texinfo: Added documentation for new 
+	HTMLElemnt::add method.
+	* cgicc/Makefile.am: Add $(top_builddir) to includes
+
+1999-08-16  Christof Danzl  <cdanzl@cosy.sbg.ac.at>
+
+	* cgicc/FormEntry.cpp(makeString): Only increment src once
+	when a CR or LF is encountered.
+	
+1999-08-16  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* win/cgicc.dsp: Modified to use "Multithreaded DLL" runtime library
+	* win/dns.dsp,test.dsp,example.dsp: Modified to use "Multithreaded"
+	runtime library
+	* cgicc/CgiDefs.h.in: Enable warning 4251 in WIN32 section
+	* cgicc/CgiEnvironment.h: Added declaration for templatized member
+	* cgicc/FormEntry.h: Added dummy operator< for MSVC++
+	* cgicc/FormFile.h:  Added dummy operator< for MSVC++
+	* cgicc/HTMLAttributes.h:  Added dummy operator< for MSVC++, and 
+	declaration for templatized member
+	* cgicc/HTMLElements.cpp: Added operator==
+	* cgicc/HTMLElements.h: Added operator==, operator!=, operator<, and
+	declaration for templatized member
+	* cgicc/HTTPHeaders.cpp: Added operator==
+	* cgicc/HTTPHeaders.h: Added operator==, operator!=, operator<
+	* info/tutorial.texinfo: Remove reference to HTMLAttributeList
+	* info/classes-html.texinfo: Add description to getElements and
+	getAttributes methods.
+	* cgicc/Cgicc.h: Added declaration for templatized member
+	* cgicc/Cgicc.cpp: Removed #ifdef WIN32 copy_if section
+	* README.WIN: Added section on C4251 warnings
+
+1999-08-11  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/CgiDefs.h.in: Disable warning 4251 in WIN32 section
+
+1999-08-10  Stephen F. Booth  <sbooth@ride.cupertino.ibm.com>
+
+	* info/tutorial.texinfo: Updated for new HTML generation
+	* info/classes-html.texinfo: Same
+	* demo/test.cpp: Changed code to use new HTML generation technique
+	* demo/dns.cpp: Changed code to use new HTML generation technique
+	* cgicc/HTMLClasses.h: Define div as div_ and select as select_
+	if USE_NAMESPACES is 0
+	* demo/{test.cpp,dns.cpp}: #define div div_, #define select select_ 
+	if USE_NAMESPACES is 0
+	* example/Makefile.in: Removed @DEFS@
+
+1999-08-09  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* configure.in: AC_INIT(Cgicc.cc) -> AC_INIT(Cgicc.cpp)
+	* cgicc/*.cc: Removed, renamed to *.cpp.  Changed #includes to 
+	reflect new names.
+	* cgicc/*.hh: Removed, renamed to *.h.  Changed #includes to
+	reflect new names.
+	* cgicc/Makefile.am: All .cc -> .cpp, .hh -> .h.  config.h is
+	no longer installed.
+	* demo/test.cc: Removed, renamed to test.cpp.  Changed #includes
+	to reflect new names.
+	* demo/dns.cc: Removed, renamed to dns.cpp.  Changed #includes
+	to reflect new names.
+	* demo/Makefile.am: All .cc -> .cpp.
+	* example/yourSource.cc: Removed, renamed to yourSource.cpp.  Changed
+	#includedes to reflect new names.
+	* example/Makefile.in: .cc -> .cpp.
+	* configure.in: Added AC_CONFIG_AUX_DIR(support).
+	* configure.in: Added AC_REVISION
+	* Makefile.am: yourSource.cc -> yourSource.cpp.
+	* cgicc/CgiDefs.h: Removed, added CgiDefs.h.in.
+	* cgicc/CgiDefs.h.in: Added USE_NAMESPACES
+	* cgicc/config.h.in: Removed USE_NAMESPACES
+	* cgicc/Makefile.am: config.h no longer installed.
+	* acconfig.h: Removed USE_NAMESPACES
+	* configure.in: No longer AC_DEFINE USE_NAMESPACES; AC_SUBST instead
+	* README.WIN: Added
+	* win/cgicc.{dsw,dsp},test.dsp,dns.dsp,example.dsp: Added
+	* Makefile.am: Added rules to dist-hook for Win32 files
+
+1999-08-06  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/HTMLElements.{hh,cc}: Added add() method, to allow
+	embedded HTMLElements to be embedded after object construction.
+
+1999-08-06  Christof Danzl  <cdanzl@cosy.sbg.ac.at>
+
+	* cgicc/HTMLElements.{hh,cc}: Completely reworked for new
+	HTML generation strategy.
+	* cgicc/HTML*.{hh,cc}: Removed (see above).
+	* cgicc/HTMLClasses.hh: Completely reworked for new HTML
+	generation strategy.
+	* cgicc/HTMLGeneric.hh: New file, for new HTML generation
+	strategy.
+
+1999-08-05  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* configure.in: Added AC_CONFIG_AUX_DIR(support)
+
+1999-08-03  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/HTMLAttributes.hh: Changed all add methods to set.
+	* cgicc/HTMLAttributes.cc: Changed all add methods to set.
+
+1999-08-02  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/Cgicc.cc(copy_if): Removed prototype, moved definition
+	inside of CGICC_NAMESPACE block.
+	* Makefile.am: Added check-news, dist-zip to AUTOMAKE_OPTIONS
+
+1999-07-30  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/HTTPHeaders.hh(HTTPCookie): Reworked to use cookie spec
+	per RFC 2109 (use seconds for maximum age, added comment and
+	version fields).
+	* cgicc/HTTPHeaders.hh(HTTPCookie): Removed getExpires, replaced
+	by getMaxAge.  Added getComment.
+	* cgicc/HTTPHeaders.cc(HTTPCookie): Changed ctor and render.
+	* info/classes-http.texinfo: Changed documentation for HTTPCookie
+	to reflect new cookie spec.
+
+1999-06-24  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/HTMLAttributes.hh: Removed class HTMLAtomicAttribute,
+	merged with class HTMLAttribute.
+	* cgicc/HTMLAttributes.cc: Removed class HTMLAtomicAttribute,
+	merged with class HTMLAttribute.
+	* cgicc/FormEntry.hh(FormEntry, ~FormEntry, operator=): Made
+	inline
+	* cgicc/FormEntry.cc(FormEntry, ~FormEntry, operator=): Removed
+	definitions (moved to FormEntry.hh)
+	* cgicc/FormFile.hh(FormFile, ~FormFile, operator=): Made
+	inline
+	* cgicc/FormFile.cc(FormFile, ~FormFile, operator=): Removed
+	definitions (moved to FormFile.hh)
+
+1999-06-22  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/CgiDefs.hh: Changed indenting of #defines
+
+1999-06-21  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/Cgicc.cc(getElementByValue): Changed "true" to "false"
+	in call to findEntries() (reported by Christof Danzl).
+
+1999-06-16  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/CgiUtils.cc(unescapeString): Added STDNS macro to
+	"const string& src" function parameter.
+	* example/Makfile.in: Removed SOURCES macro, changed to use
+	OBJECTS.  Rewrote compilation rule to be make-independent 
+	(use old style suffix rule).
+	* acconfig.h: Changed "Cgicc" to "cgicc"
+
+1999-06-15  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* demo/testform.html: Brought in line with HTML 4.0 transitional DTD.
+
+1999-06-14  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* cgicc/Makefile.am: Updated -version-info to 0:2:0.
+
+1999-06-07  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* info/cgicc.texinfo: Changed Edition to edition, and
+	Cgicc to GNU Cgicc.
+	* configure.in: Updated version to 3.0.2
+
+1999-06-03  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* src/*: Removed directory, renamed to cgicc
+	* cgicc/*: Added files from src/
+	* cgicc/CgiDefs.hh: Removed conditional guard from 
+	config.h #include.  Changed to #include "cgicc/config.h"
+	* cgicc/*: All #include directives for cgicc headers changed
+	from "x" to "cgicc/x".
+	* configure.in: All instances of src/ changed to cgicc/
+	* Makefile.am: All instances of src/ changed to cgicc/
+	* demo/Makefile.am: All instances of src/ changed to cgicc/
+	* demo/test.cc: Cgicc includes changed for package prefix.
+	(ie, #include "Cgicc.hh" --> #include "cgicc/Cgicc.hh")
+	* demo/dns.cc: Cgicc includes changed for package prefix.
+
+1999-06-02  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* configure.in: Added AM_MAINTAINER_MODE, and switched order
+	of the AC_ENABLE for demos and namespaces (to reflect relative
+	importance).
+	* Makefile.am: Added maintainer mode conditional around
+	cvs-dist and cvs-diff targets.
+	* info/Makefile.am: Added maintainer mode targets doc-gz,
+	doc-texi-gz, doc-info-gz, doc-dvi-gz (for generating
+	.tar.gz files for web documentation)
+	* src/Makefile.am: Updated version info to 0:1:0
+	* Upgraded to libtool-1.3.2
+
+1999-06-01  Stephen F. Booth  <sbooth@saaba..lmi.net>
+
+	* src/CgiUtils.cc(readString): Added STDNS macro in front of
+	instantiated string object.
+	* src/Cgicc.cc(findEntries): Added block for MS C++ compilers
+	on Win32 that don't support the std::copy_if function.
+	* src/HTTPHeaders.cc(render): Added STDNS macro in front of
+	endl (all render methods).
+	* src/CgiEnvironment.cc(CgiEnvironment): Added STDNS macro in
+	front of cin.
+	* src/CgiEnvironment.cc(save,restore): Added STDNS macro in front
+	of ios::in and ios::skipws.
+	* info/reporting-bugs.texinfo: Added file
+	* info/cgicc.texinfo: Now includes section on reporting bugs
+
+1999-05-31  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* src/CgiUtils.cc(unescapeString): Added temporary to ensure
+	evaluation order of iterator increment in call to hexToChar.
+
+1999-05-14  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* Removed classes LinkedList and Iterator
+	* Reworked to use the STL classes vector, iterator, and string
+	* Changed include directory from $(includedir) to $(pkgincludedir)
+	* Reverted to installing config.h
+	* Upgraded to libtool-1.3
+	* Added methods on Cgicc for querying the system type
+	* Released as part of the GNU project under the GPL
+
+1999-01-05  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* Fixed problem in src/Makefile.am that caused config.h to 
+	not be installed
+	* Added example/ directory containing a skeleton CGI and Makefile
+	
+1998-12-11  Stephen F. Booth  <sbooth@saaba.lmi.net>
+
+	* Reworked to use autoconf/automake/libtool
+	* Re-released under the GNU Library General Public License

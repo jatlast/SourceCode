@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LinkMapLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP4F5.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/LinkMapLib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\LinkMap\LinkMap.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP4F5.tmp" 
+Creating command line "link.exe -lib /nologo /out:"D:\MyData\Personal\Projects\LIB_Global\LinkMapLib.lib"  .\Release\LinkMap.obj "
+<h3>Output Window</h3>
+Compiling...
+LinkMap.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+LinkMapLib.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

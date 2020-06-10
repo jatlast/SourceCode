@@ -1,0 +1,105 @@
+
+KEY			VALUE
+
+SYSTEM			DevAdmin
+
+ROOT			http://10.10.10.19:1900
+IMAGES			http://10.10.10.19:1900/images
+PICTURES		http://10.10.10.19:1900/Pictures
+CGIBIN			http://10.10.10.19:1900/cgi-bin
+ADMIN_CGIBIN		http://10.10.10.19:1900/admin/cgi-bin
+
+HTML_POPUP_BGCOLOR 	"#BDD2D2"
+HTML_HEADFOOT_BGCOLOR 	"#0066CC"
+HTML_NAV_BGCOLOR 	"#F5F5E3"
+HTML_BODY_BGCOLOR 	"#D1D1BF"
+#HTML_BODY_BGCOLOR 	"#FFFFFF"
+
+HTML_NAV_BGCOLOR_ON 	"#0099FF"
+HTML_NAV_BGCOLOR_OFF	"#0066CC"
+HTML_NAV_FONTCOLOR_ON	"#3F4958"
+HTML_NAV_FONTCOLOR_OFF	"#FFFFFF"
+
+FIRSTARROW		nav_first.gif
+NEXTARROW		nav_next.gif
+PREVIOUSARROW		nav_previous.gif
+LASTARROW		nav_last.gif
+
+NO_PIC_SMALL		photo_not_available_60x60.gif
+NO_PIC_MEDIUM		photo_not_available_120x120.gif
+NO_PIC_LARGE		photo_not_available_180x180.gif
+
+EMAILSYMBOL		Email.jpg
+DELETSYMBOL		DeleteMailX.gif
+BOOKMARKSYMBOL		pushpin2.gif
+UNREADSYMBOL		redhart.gif
+LINESYMBOL		line.gif
+SPACESYMBOL		sp1.gif
+PROCESSINGSYMBOL	processing.gif
+BECOME_MEMBER_GIF	become_a_premium_member_now.gif
+
+SMTP_HOST		smtpout.verizon.net
+BLAT_PATH		D:/Required
+
+AUTHORIZE_TEST_MODE	1
+PRICE_ONE		9.99
+PRICE_THREE		24.99
+PRICE_TWELVE		94.99
+PRICE_LIFETIME		299.99
+
+INBOX_COLOR_1		"#FFFFCC"
+INBOX_COLOR_2		"#FF9999"
+OUTBOX_COLOR_1		"#CCFFCC"
+OUTBOX_COLOR_2		"#99CCCC"
+
+
+PICTURES_FOLDER		D:/MyData/Personal/Projects/Connections/PersianConnectionsWebDev/Pictures/
+DOS_PICTURES_FOLDER	D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\Pictures\
+
+WORD_TO_FLAG_1		enter
+WORD_TO_FLAG_2		travel
+WORD_TO_FLAG_3		her
+WORD_TO_FLAG_4		Ballads
+WORD_TO_FLAG_5		guide
+WORD_TO_FLAG_6		persian
+WORD_TO_FLAG_7		him
+WORD_TO_FLAG_8		tehran
+NUMBER_OF_WORDS_TO_FLAG	8
+
+MALE			fixlogin_1.jpg
+MNAME			fixlogin
+FEMALE			Thursday436_1.jpg
+FNAME			Thursday436
+
+DBNAME			SMITHERS
+DBUSER			Connections_Dev
+#DBUSER			PersianConnections_Test
+DBPWD			citrix
+DBUSER_MAILING_LIST	spam
+
+HTML_TITLE 		PersianConnections.com
+HTML_HEAD 		<strong>PersianConnections</strong>
+EMAIL			admin@PersianConnections.com
+#EMAIL			jatlast@hotmail.com
+WHICH_CONNECTIONS 	PersianConnections
+LOGO			persianconnections_logo_arial_large.gif
+COPYRIGHT_YEAR		2001
+
+
+BECOME_PREMIUM_MEMBER	become_premium_member_now.gif
+
+ADMIN_MAIL_SENT_FROM_1		Admin@PersianConnections.com
+ADMIN_MAIL_SENT_FROM_2		persian.connections@verizon.net
+ADMIN_MAIL_SENT_FROM_3		connections.admin@verizon.net
+NUMBER_OF_MAIL_SENT_FROM	3
+
+#ADMIN_MAIL_SENT_TO_1	admin_GetEmailForAllPremiumMembers	
+#ADMIN_MAIL_SENT_TO_2	admin_GetEmailForAllGuestMembers
+#ADMIN_MAIL_SENT_TO_3	admin_GetEmailWhereMembersOlderThanThreeMonths
+ADMIN_MAIL_SENT_TO_1	admin_GetEmailForAllMembers
+NUMBER_OF_MAIL_SENT_TO	1
+
+#HTML_DETAIL_TEXT_COLOR	"#800000"
+
+
+#osql -Ssmithers -Usa -Pcitrix -Q"select * from user_info where user_name = 'jubin'" -w65536 -otmp.txt

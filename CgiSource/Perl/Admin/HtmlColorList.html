@@ -1,0 +1,382 @@
+<html>
+
+<head>
+<title>Color List</title>
+
+
+</head>
+
+<body marginheight="0" marginwidth="0">
+
+
+
+<script language="JavaScript">
+window.focus();
+</script>
+<div align="center"><center>
+
+<table border="0" width="600">
+    <tr>
+
+<script language="JavaScript">
+<!--
+var nColors = 140
+var aColor = new makeArray(nColors)
+
+function fColor(cName,cNumber,nR,nG,nB) {
+  this.cName   = cName
+  this.cNumber = cNumber
+}
+
+function makeArray (NumElements) 
+{
+var Count; 
+this.length=NumElements; 
+for (var Count = 1 ; Count <= NumElements ; Count++)
+     this[Count] = 0;  
+     return (this); 
+}
+
+
+aColor[  1] = new fColor('aliceblue','#F0F8FF')
+aColor[  2] = new fColor('antiquewhite','#FAEBD7')
+aColor[  3] = new fColor('aqua','#00FFFF')
+aColor[  4] = new fColor('aquamarine','#7FFFD4')
+aColor[  5] = new fColor('azure','#F0FFFF')
+aColor[  6] = new fColor('beige','#F5F5DC')
+aColor[  7] = new fColor('bisque','#FFE4C4')
+aColor[  8] = new fColor('black','#000000')
+aColor[  9] = new fColor('blanchedalmond','#FFEBCD')
+aColor[ 10] = new fColor('blue','#0000FF')
+aColor[ 11] = new fColor('blueviolet','#8A2BE2')
+aColor[ 12] = new fColor('brown','#A52A2A')
+aColor[ 13] = new fColor('burlywood','#DEB887')
+aColor[ 14] = new fColor('cadetblue','#5F9EA0')
+aColor[ 15] = new fColor('chartreuse','#7FFF00')
+aColor[ 16] = new fColor('chocolate','#D2691E')
+aColor[ 17] = new fColor('coral','#FF7F50')
+aColor[ 18] = new fColor('cornflowerblue','#6495ED')
+aColor[ 19] = new fColor('cornsilk','#FFF8DC')
+aColor[ 20] = new fColor('crimson','#DC143C')
+aColor[ 21] = new fColor('cyan','#00FFFF')
+aColor[ 22] = new fColor('darkblue','#00008B')
+aColor[ 23] = new fColor('darkcyan','#008B8B')
+aColor[ 24] = new fColor('darkgoldenrod','#B8860B')
+aColor[ 25] = new fColor('darkgray','#A9A9A9')
+aColor[ 26] = new fColor('darkgreen','#006400')
+aColor[ 27] = new fColor('darkkhaki','#BDB76B')
+aColor[ 28] = new fColor('darkmagenta','#8B008B')
+aColor[ 29] = new fColor('darkolivegreen','#556B2F')
+aColor[ 30] = new fColor('darkorange','#FF8C00')
+aColor[ 31] = new fColor('darkorchid','#9932CC')
+aColor[ 32] = new fColor('darkred','#8B0000')
+aColor[ 33] = new fColor('darksalmon','#E9967A')
+aColor[ 34] = new fColor('darkseagreen','#8FBC8F')
+aColor[ 35] = new fColor('darkslateblue','#483D8B')
+aColor[ 36] = new fColor('darkslategray','#2F4F4F')
+aColor[ 37] = new fColor('darkturquoise','#00CED3')
+aColor[ 38] = new fColor('darkviolet','#9400D3')
+aColor[ 39] = new fColor('deeppink','#FF1493')
+aColor[ 40] = new fColor('deepskyblue','#00C7FF')
+aColor[ 41] = new fColor('dimgray','#696969')
+aColor[ 42] = new fColor('dodgerblue','#1E90FF')
+aColor[ 43] = new fColor('firebrick','#B22222')
+aColor[ 44] = new fColor('floralwhite','#FFFAF0')
+aColor[ 45] = new fColor('forestgreen','#228B22')
+aColor[ 46] = new fColor('fuchsia','#FF00FF')
+aColor[ 47] = new fColor('gainsboro','#DCDCDC')
+aColor[ 48] = new fColor('ghostwhite','#F8F8FF')
+aColor[ 49] = new fColor('gold','#FFD700')
+aColor[ 50] = new fColor('goldenrod','#DAA520')
+aColor[ 51] = new fColor('gray','#808080')
+aColor[ 52] = new fColor('green','#008000')
+aColor[ 53] = new fColor('greenyellow','#ADFF2F')
+aColor[ 54] = new fColor('honeydew','#F0FFF0')
+aColor[ 55] = new fColor('hotpink','#FF69B4')
+aColor[ 56] = new fColor('indianred','#CD5C5C')
+aColor[ 57] = new fColor('indigo','#4B00B0')
+aColor[ 58] = new fColor('ivory','#FFFF82')
+aColor[ 59] = new fColor('khaki','#F0E68C')
+aColor[ 60] = new fColor('lavender','#E6E6E6')
+aColor[ 61] = new fColor('lavenderblush','#FFF0F5')
+aColor[ 62] = new fColor('lawngreen','#7CFC00')
+aColor[ 63] = new fColor('lemonchiffon','#FFFACD')
+aColor[ 64] = new fColor('lightblue','#ADD8E6')
+aColor[ 65] = new fColor('lightcoral','#F08080')
+aColor[ 66] = new fColor('lightcyan','#E0FFFF')
+aColor[ 67] = new fColor('lightgoldenrodyellow','#FAFAD2')
+aColor[ 68] = new fColor('lightgreen','#90EE90')
+aColor[ 69] = new fColor('lightgrey','#D3D3D3')
+aColor[ 70] = new fColor('lightpink','#FFB6C1')
+aColor[ 71] = new fColor('lightsalmon','#FFA07A')
+aColor[ 72] = new fColor('lightseagreen','#20B2AA')
+aColor[ 73] = new fColor('lightskyblue','#87CEFA')
+aColor[ 74] = new fColor('lightslategray','#778899')
+aColor[ 75] = new fColor('lightsteelblue','#B0C4DE')
+aColor[ 76] = new fColor('lightyellow','#FFFFE0')
+aColor[ 77] = new fColor('lime','#00FF00')
+aColor[ 78] = new fColor('limegreen','#32CD32')
+aColor[ 79] = new fColor('linen','#FAF0E6')
+aColor[ 80] = new fColor('magenta','#FF00FF')
+aColor[ 81] = new fColor('maroon','#800000')
+aColor[ 82] = new fColor('mediumaquamarine','#66CDAA')
+aColor[ 83] = new fColor('mediumblue','#0000CD')
+aColor[ 84] = new fColor('mediumorchid','#BA55D3')
+aColor[ 85] = new fColor('mediumpurple','#9370DB')
+aColor[ 86] = new fColor('mediumseagreen','#3CB371')
+aColor[ 87] = new fColor('mediumslateblue','#7B68EE')
+aColor[ 88] = new fColor('mediumspringgreen','#00FA9A')
+aColor[ 89] = new fColor('mediumturquoise','#48D1CC')
+aColor[ 90] = new fColor('mediumvioletred','#C7D285')
+aColor[ 91] = new fColor('midnightblue','#191970')
+aColor[ 92] = new fColor('mintcream','#F5FFFA')
+aColor[ 93] = new fColor('mistyrose','#FFE4FF')
+aColor[ 94] = new fColor('moccasin','#FFE4B5')
+aColor[ 95] = new fColor('navajowhite','#FFDEAD')
+aColor[ 96] = new fColor('navy','#000080')
+aColor[ 97] = new fColor('oldlace','#FDF5E6')
+aColor[ 98] = new fColor('olive','#808000')
+aColor[ 99] = new fColor('olivedrab','#6B8E23')
+aColor[100] = new fColor('orange','#FFA500')
+aColor[101] = new fColor('orangered','#FF4500')
+aColor[102] = new fColor('orchid','#DA70D6')
+aColor[103] = new fColor('palegoldenrod','#EEE8AA')
+aColor[104] = new fColor('palegreen','#98FB98')
+aColor[105] = new fColor('paleturquoise','#AFEEEE')
+aColor[106] = new fColor('palevioletred','#DB7093')
+aColor[107] = new fColor('papayawhip','#FFEFD5')
+aColor[108] = new fColor('peachpuff','#FFDAB9')
+aColor[109] = new fColor('peru','#CD853F')
+aColor[110] = new fColor('pink','#FFC0CB')
+aColor[111] = new fColor('plum','#DDA0DD')
+aColor[112] = new fColor('powderblue','#B0E0E6')
+aColor[113] = new fColor('purple','#800080')
+aColor[114] = new fColor('red','#FF0000')
+aColor[115] = new fColor('rosybrown','#BC8F8F')
+aColor[116] = new fColor('royalblue','#4169FF')
+aColor[117] = new fColor('saddlebrown','#8B4513')
+aColor[118] = new fColor('salmon','#FA8072')
+aColor[119] = new fColor('sandybrown','#F4A460')
+aColor[120] = new fColor('seagreen','#2E8B57')
+aColor[121] = new fColor('seashell','#FFF5EE')
+aColor[122] = new fColor('sienna','#A0522D')
+aColor[123] = new fColor('silver','#C0C0C0')
+aColor[124] = new fColor('skyblue','#87CEEB')
+aColor[125] = new fColor('slateblue','#6A5ACD')
+aColor[126] = new fColor('slategray','#708090')
+aColor[127] = new fColor('snow','#FFFAFA')
+aColor[128] = new fColor('springgreen','#00FF7F')
+aColor[129] = new fColor('steelblue','#4682B4')
+aColor[130] = new fColor('tan','#D2B48C')
+aColor[131] = new fColor('teal','#008080')
+aColor[132] = new fColor('thistle','#D8BFD8')
+aColor[133] = new fColor('tomato','#FF6347')
+aColor[134] = new fColor('turquoise','#40E0D0')
+aColor[135] = new fColor('violet','#EE82EE')
+aColor[136] = new fColor('wheat','#F5DEB3')
+aColor[137] = new fColor('white','#FFFFFF')
+aColor[138] = new fColor('whitesmoke','#F5F5F5')
+aColor[139] = new fColor('yellow','#FFFF00')
+aColor[140] = new fColor('yellowgreen','#9ACD32')
+
+function fixdfv(e){e.value = e.defaultValue}
+
+function WriteTable(){
+var dark = false
+ for ( var n = 1 ; n <= nColors ; n++)
+ {
+  dark = ( (aColor[n].nR+aColor[n].nG+aColor[n].nB) < 255 ) ? true : false
+  document.write("<TR><TD bgColor='",aColor[n].cNumber,"'>")
+  if (dark) { document.write("<FONT COLOR='#FFFFFF'>") }
+  document.write(aColor[n].cName.bold())
+  if (dark) { document.write("</FONT>") }
+  document.write("</TD>",
+                 "<TD BGCOLOR='#F5F5E3' ALIGN='center'>&nbsp;<INPUT TYPE='radio' NAME='HTML_NAV_BGCOLOR'>&nbsp;</TD>",
+                 "<TD BGCOLOR='#D1D1BF' ALIGN='center'>&nbsp;<INPUT TYPE='radio' NAME='HTML_BODY_BGCOLOR'>&nbsp;</TD>",
+                 "<TD BGCOLOR='#0066CC' ALIGN='center'>&nbsp;<INPUT TYPE='radio' NAME='HTML_HEADFOOT_BGCOLOR'>&nbsp;</TD>",
+                 "<TD><INPUT SIZE='9' ONCHANGE='fixdfv(this)' VALUE='",aColor[n].cNumber,"'></TD>",
+                 "</TR>")
+ }
+}
+
+function openPreviewWindow(NewWindowName, myNavColor, myBodyColor, myHeadFootColor) 
+{
+      var myWindow = window.open(NewWindowName, null, 'toolbar=yes, location=yes, scrollbars=yes, resizeable=yes, status=yes, width=900, height=600')
+      myWindow.document.write("\
+      <HTML>\
+        <HEAD>\
+          <TITLE>\
+            HTML_TITLE\
+          </TITLE>\
+        </HEAD>\
+        <BODY>\
+          <TABLE border=\"0\" cellpadding=\"4\" cellspacing=\"4\" width=\"800\">\
+            <TR align=\"left\">\
+              <TD colspan=\"2\" bgcolor=\"" + myHeadFootColor + "\" height=\"38\" valign=\"middle\">\
+                <A href=\"ROOT/index.html\"><IMG alt=\"Persian Dating Home\" src=\"/IMAGES/LOGO\" border=\"0\" width=\"500\" height=\"40\"></A>\
+              </TD>\
+            </TR>\
+            <TR>\
+              <TD bgcolor=\"" + myNavColor+ "\" valign=\"top\" width=\"150\" height=\"394\">\
+                <TABLE border=\"0\" cellpadding=\"3\" cellspacing=\"3\" width=\"150\">\
+                  <TR>\
+                    <TD>\
+                      <A href=\"ROOT\">ROOT</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"IMAGES\">IMAGES</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"PICTURES\">PICTURES</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"CGIBIN\">CGIBIN</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"ADMIN_CGIBIN\">ADMIN_CGIBIN</A>\
+                    </TD>\
+                  </TR>\
+                  <TR>\
+                    <TD>\
+                      <A href=\"mailto:EMAIL\">EMAIL</A>\
+                    </TD>\
+                  </TR>\
+                </TABLE>\
+              </TD>\
+              <TD width=\"667\" bgcolor=\"" + myBodyColor + "\" height=\"394\" valign=\"top\">\
+                SYSTEM\
+              </TD>\
+            </TR>\
+            <TR>\
+              <TD colspan=\"2\" bgcolor=\"" + myHeadFootColor+ "\" height=\"23\" valign=\"middle\">\
+                <FONT size=\"4\" face=\"Arial, Helvetica, sans-serif\">WHICH_CONNECTIONS.com</FONT> <FONT face=\"Arial, Helvetica, sans-serif\" size=\"2\"><BR>\
+                 Copyright &copy; COPYRIGHT_YEAR WHICH_CONNECTIONS.com. All rights reserved.</FONT>\
+              </TD>\
+            </TR>\
+          </TABLE>\
+        </BODY>\
+      </HTML>\
+      ")
+      myWindow.document.close()
+      myWindow.focus()
+}
+
+function GetNavColor(myForm) 
+{
+	var NavRadioIndex = -1
+	for(i=0; i < myForm.HTML_NAV_BGCOLOR.length; i++)
+	{
+		if(myForm.HTML_NAV_BGCOLOR[i].checked)
+			NavRadioIndex = i + 1
+	}
+return NavRadioIndex
+}
+
+function GetBodyColor(myForm) 
+{
+	var BodyRadioIndex = -1
+	for(i=0; i < myForm.HTML_BODY_BGCOLOR.length; i++)
+	{
+		if(myForm.HTML_BODY_BGCOLOR[i].checked)
+			BodyRadioIndex = i + 1
+	}
+return BodyRadioIndex 
+}
+
+function GetHeadFootColor(myForm) 
+{
+	var HeadFootRadioIndex = -1
+	for(i=0; i < myForm.HTML_HEADFOOT_BGCOLOR.length; i++)
+	{
+		if(myForm.HTML_HEADFOOT_BGCOLOR[i].checked)
+			HeadFootRadioIndex = i + 1
+	}
+return HeadFootRadioIndex 
+}
+
+function PreviewCurrentSettings(myForm) 
+{
+	var NavColorIndex = GetNavColor(myForm)
+	var NavColor = ""
+	if(NavColorIndex == -1)
+	{
+		alert("You must choose a HTML_NAV_BGCOLOR")
+		return false
+	}
+	else
+	{
+		NavColor = aColor[NavColorIndex].cNumber
+	}
+
+	var BodyColorIndex = GetBodyColor(myForm)
+	var BodyColor = ""
+	if(BodyColorIndex == -1)
+	{
+		alert("You must choose a HTML_BODY_BGCOLOR")
+		return false
+	}
+	else
+	{
+		BodyColor = aColor[BodyColorIndex ].cNumber
+	}
+
+	var HeadFootColorIndex = GetHeadFootColor(myForm)
+	var HeadFootColor = ""
+	if(HeadFootColorIndex == -1)
+	{
+		alert("You must choose a HTML_HEADFOOT_BGCOLOR")
+		return false
+	}
+	else
+	{
+		HeadFootColor = aColor[HeadFootColorIndex].cNumber
+	}
+
+openPreviewWindow("PreviewWindow.html", NavColor, BodyColor, HeadFootColor)
+}
+
+//-->
+</script>
+
+        <form name="theForm">
+            <div align="center"><center><table border="0"
+            cellpadding="2" bgcolor="#FCFCFC">
+                <tr>
+                    <th rowspan="2"><font color="#000000" size="2" face="MS Sans Serif, News Gothic MT, Arial, Sans-Serif, Helvetica">Color Name</font></th>
+                    <th rowspan="1">Nav</th>
+                    <th rowspan="1">Body</th>
+                    <th rowspan="1">HeadFoot</th>
+                    <th><font color="#000000" size="2" face="MS Sans Serif, News Gothic MT, Arial, Sans-Serif, Helvetica">Hex Values</font></th>
+                </tr>
+                <tr>
+                </tr>
+                <font color="#000000" size="2"
+                face="MS Sans Serif, News Gothic MT, Arial, Sans-Serif, Helvetica">
+
+<script language="JavaScript">
+<!--
+	WriteTable();
+//-->
+</script></font>
+
+            </table>
+            </center></div>
+	  <INPUT TYPE=button Value="Open Preview Window" onClick=PreviewCurrentSettings(theForm)>
+        </form>
+        </td>
+    </tr>
+</table>
+</center></div>
+
+
+
+</body>
+</html>

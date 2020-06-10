@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DB_Table_BaseLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP16F7.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /FR"Debug/" /Fp"Debug/DB_Table_BaseLib.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\DB_Table_Base\DB_Table_Base.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP16F7.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP16F8.tmp" with contents
+[
+/nologo /out:"D:\MyData\Personal\Projects\LIB_Global\DB_Table_BaseLib.lib" 
+.\Debug\About_Info.obj
+.\Debug\AdvancedSearch_Info.obj
+.\Debug\Billing_Info.obj
+.\Debug\Contact_Info.obj
+.\Debug\DB_Table_Base.obj
+.\Debug\Login_Info.obj
+.\Debug\Personal_Info.obj
+.\Debug\Profile_Info.obj
+.\Debug\ReadMail_Info.obj
+.\Debug\SimpleSerach_Info.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP16F8.tmp"
+<h3>Output Window</h3>
+Compiling...
+DB_Table_Base.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+DB_Table_BaseLib.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

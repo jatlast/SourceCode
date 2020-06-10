@@ -1,0 +1,29 @@
+Credit Card Processing Contact Information 
+
+####### Gecko Technologies ####################################
+# Merchant ID:  5431 3808 4400 1560 (with Charge.com)
+#
+# Merchant ID (MID):	532515	  	(with NOVA)
+# Terminal ID (TID):	664045		(with NOVA)	
+###############################################################
+
+####### Authorize.Net #########################################
+# 24/7 
+# 1-877-447-3938 (press opt. #2 for tech support)
+# support@authorizenet.com
+###############################################################
+
+####### Charge.com ############################################
+# 9am to 5pm M-F
+# 1-954-584-2272  HQ (press opt. # 5 for tech support)
+###############################################################
+
+####### Processing Source International #######################
+# 1-800-977-4770 Processor 		  7:30am to 4:30pm M-F
+# 1-800-325-4021 Customer Care	  24/7 
+###############################################################
+
+####### First Data Resources (Nashville) ######################
+# 24/7 
+# 1-800-647-3722 (They do not troubleshoot) 
+###############################################################

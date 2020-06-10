@@ -1,0 +1,230 @@
+<HTML><BODY    >
+
+<FORM METHOD="POST" ACTION="transact.dll">
+
+<INPUT TYPE="HIDDEN" NAME="x_version" VALUE="3.0">
+<INPUT TYPE="HIDDEN" NAME="x_currency_code" VALUE="USD">
+<INPUT TYPE="HIDDEN" NAME="x_method" VALUE="CC">
+<INPUT TYPE="HIDDEN" NAME="x_VT" VALUE="TRUE">
+<INPUT TYPE="HIDDEN" NAME="x_SessionID" VALUE="140157">
+<INPUT TYPE="HIDDEN" NAME="x_SessionToken" VALUE="9763816CBA956CDE2CB86FFE56CD8C7A">
+
+
+
+
+
+<TABLE>
+  
+  <TR>
+    <TD COLSPAN=2><CENTER><H2><FONT COLOR="RED">TEST MODE</FONT></H2></CENTER></TD>
+  </TR>
+  
+  <TR>
+    <TD COLSPAN=2><HR><CENTER></CENTER><HR></TD>
+  </TR>
+  
+  <TR>
+    <TD COLSPAN=2><B><FONT SIZE=+1>Order Information</FONT></B><HR></TD>
+  </TR><TR>
+    <TD>Transaction Type</TD>
+    <TD><INPUT TYPE="RADIO" NAME="x_type" VALUE="auth_capture" CHECKED>Charge A Credit Card / Debit A Checking Account</TD>
+  </TR><TR>
+    <TD>&nbsp;</TD>
+    <TD><INPUT TYPE="RADIO" NAME="x_type" VALUE="credit" >Credit Money Back To A Credit Card / Checking Account</TD>
+  </TR>
+  
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD><INPUT TYPE="RADIO" NAME="x_type" VALUE="auth_only" >Authorize An Amount / Do Not Capture Funds Yet</TD>
+  </TR><TR>
+    <TD>&nbsp;</TD>
+    <TD><INPUT TYPE="RADIO" NAME="x_type" VALUE="capture_only" >Capture Funds Only (requires Authorization Code) (Credit Card Only)</TD>
+  </TR>
+  
+  <TR>
+    <TD>Invoice #</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=20 MAXLENGTH=20 NAME="x_invoice_num" VALUE=""></TD>
+  </TR><TR>
+    <TD>Description</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=250 NAME="x_description" VALUE=""></TD>
+  </TR><TR>
+    <TD>Amount</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=10 MAXLENGTH=8 NAME="x_amount" VALUE=""></TD>
+  </TR><TR>
+    <TD></TD>
+    <TD></TD>
+  </TR><TR>
+    <TD></TD>
+    <TD></TD>
+  </TR>
+  
+  <!--
+<TR><TD>Payment Method</TD><TD><INPUT TYPE="RADIO" NAME="x_method" VALUE="CC" CHECKED>Credit Card</TD></TR>
+<TR><TD>&nbsp;</TD><TD><INPUT TYPE="RADIO" NAME="x_method" VALUE="ECHECK" >Checking Account (USA only)</TD></TR>
+
+  -->
+  
+  <TR>
+    <TD COLSPAN=2>&nbsp;</TD>
+  </TR><TR>
+    <TD COLSPAN=2><B><FONT SIZE=+1>Credit Card Information</FONT> (if Payment Method is Credit Card)</B><HR></TD>
+  </TR>
+<TR><TD>Accepted Cards</TD><TD>Visa</TD></TR><TR><TD>&nbsp;</TD><TD>MasterCard</TD></TR>
+  <TR>
+    <TD>Card Number</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=18 MAXLENGTH=16 NAME="x_card_num" VALUE=""></TD>
+  </TR><TR>
+    <TD>Exp. Date</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=7 MAXLENGTH=4 NAME="x_exp_date" VALUE="">&nbsp;<B><FONT COLOR=#0000FF>(mmyy)</FONT></B></TD>
+  </TR><TR>
+    <TD>Authorization Code</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=9 MAXLENGTH=6 NAME="x_auth_code" VALUE="">&nbsp;<B><FONT COLOR=#0000FF>(for Capture Only transactions)</FONT></B></TD>
+  </TR>
+  
+  <!--
+  <TR>
+    <TD COLSPAN=2>&nbsp;</TD>
+  </TR><TR>
+    <TD COLSPAN=2><B><FONT SIZE=+1>Checking Account Information</FONT> (if Payment Method is Checking Account)</B><HR></TD>
+  </TR><TR>
+    <TD>Bank Name</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=22 MAXLENGTH=20 NAME="x_bank_name" VALUE=""></TD>
+  </TR><TR>
+    <TD>Account Number</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=22 MAXLENGTH=20 NAME="x_bank_acct_num" VALUE="">&nbsp;&nbsp;<B><FONT COLOR=#0000FF>(enter numerals only -- no dashes or spaces)</FONT></B></TD>
+  </TR><TR>
+    <TD>ABA Routing Code</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=11 MAXLENGTH=9 NAME="x_bank_aba_code" VALUE="">&nbsp;&nbsp;<B><FONT COLOR=#0000FF><A HREF=http://www.authorizenet.com/help/ExampleCheck.htm>Help</A></FONT></B></TD>
+  </TR><TR>
+    <TD></TD>
+    <TD></TD>
+  </TR><TR>
+    <TD>Driver's License Number</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=12 MAXLENGTH=50 NAME="x_drivers_license_num" VALUE=""></TD>
+  </TR><TR>
+    <TD>Driver's License State</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=2 MAXLENGTH=2 NAME="x_drivers_license_state" VALUE=""></TD>
+  </TR><TR>
+    <TD>Date of Birth on Driver's License</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=12 MAXLENGTH=12 NAME="x_drivers_license_dob" VALUE=""></TD>
+  </TR><TR>
+    <TD>Customer SSN</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=10 MAXLENGTH=9 NAME="x_customer_tax_id" VALUE=""></TD>
+  </TR><TR>
+    <TD>Customer Organization Type</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=10 MAXLENGTH=9 NAME="x_customer_organization_type" VALUE=""></TD>
+  </TR>
+  -->
+  
+  <TR>
+    <TD COLSPAN=2>&nbsp;</TD>
+  </TR><TR>
+    <TD COLSPAN=2><B><FONT SIZE=+1>Customer Billing Information</FONT></B><HR></TD>
+  </TR><TR>
+    <TD>Customer ID</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=17 MAXLENGTH=15 NAME="x_cust_id" VALUE=""></TD>
+  </TR><TR>
+    <TD>First Name</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=50 NAME="x_first_name" VALUE=""></TD>
+  </TR><TR>
+    <TD>Last Name</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=50 NAME="x_last_name" VALUE=""></TD>
+  </TR><TR>
+    <TD>Company</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=50 NAME="x_company" VALUE=""></TD>
+  </TR><TR>
+    <TD>Address</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=60 NAME="x_address" VALUE=""></TD>
+  </TR><TR>
+    <TD>City</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=40 MAXLENGTH=40 NAME="x_city" VALUE=""></TD>
+  </TR><TR>
+    <TD>State/Province</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=40 MAXLENGTH=40 NAME="x_state" VALUE=""></TD>
+  </TR><TR>
+    <TD>Zip Code</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=20 MAXLENGTH=20 NAME="x_zip" VALUE=""></TD>
+  </TR><TR>
+    <TD>Country</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=60 NAME="x_country" VALUE=""></TD>
+  </TR><TR>
+    <TD>Phone</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=25 MAXLENGTH=25 NAME="x_phone" VALUE=""></TD>
+  </TR><TR>
+    <TD>Fax</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=25 MAXLENGTH=25 NAME="x_fax" VALUE=""></TD>
+  </TR><TR>
+    <TD>E-Mail</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=255 NAME="x_email" VALUE=""></TD>
+  </TR>
+  
+  
+  <TR>
+    <TD COLSPAN=2>&nbsp;</TD>
+  </TR><TR>
+    <TD COLSPAN=2><B><FONT SIZE=+1>Customer Shipping Information</FONT> (if different from above)</B><HR></TD>
+  </TR><TR>
+    <TD>First Name</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=50 NAME="x_ship_to_first_name" VALUE=""></TD>
+  </TR><TR>
+    <TD>Last Name</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=50 NAME="x_ship_to_last_name" VALUE=""></TD>
+  </TR><TR>
+    <TD>Company</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=50 NAME="x_ship_to_company" VALUE=""></TD>
+  </TR><TR>
+    <TD>Address</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=60 NAME="x_ship_to_address" VALUE=""></TD>
+  </TR><TR>
+    <TD>City</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=40 MAXLENGTH=40 NAME="x_ship_to_city" VALUE=""></TD>
+  </TR><TR>
+    <TD>State/Province</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=40 MAXLENGTH=40 NAME="x_ship_to_state" VALUE=""></TD>
+  </TR><TR>
+    <TD>Zip Code</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=20 MAXLENGTH=20 NAME="x_ship_to_zip" VALUE=""></TD>
+  </TR><TR>
+    <TD>Country</TD>
+    <TD><INPUT TYPE="TEXT" SIZE=50 MAXLENGTH=60 NAME="x_ship_to_country" VALUE=""></TD>
+  </TR>
+  
+  <!--
+  <TR>
+    <TD COLSPAN=2>&nbsp;</TD>
+  </TR><TR>
+    <TD COLSPAN=2><B><FONT SIZE=+1>Level 2 Information</FONT></B><HR></TD>
+  </TR><TR>
+    <TD></TD>
+    <TD></TD>
+  </TR><TR>
+    <TD></TD>
+    <TD></TD>
+  </TR><TR>
+    <TD></TD>
+    <TD></TD>
+  </TR><TR>
+    <TD></TD>
+    <TD></TD>
+  </TR><TR>
+    <TD></TD>
+    <TD></TD>
+  </TR><TR>
+    <TD></TD>
+    <TD></TD>
+  </TR>
+  -->
+
+  <TR>
+    <TD COLSPAN=2>&nbsp;</TD>
+  </TR><TR>
+    <TD COLSPAN=2><HR><CENTER></CENTER><HR></TD>
+  </TR><TR>
+    <TD COLSPAN=2>&nbsp;</TD>
+  </TR><TR>
+    <TD COLSPAN=2 NOWRAP><CENTER><INPUT TYPE="SUBMIT" VALUE="Submit Transaction">&nbsp;&nbsp;<INPUT TYPE="RESET" VALUE="Clear Form"></CENTER></TD>
+  </TR>
+</TABLE>
+</FORM>
+
+</BODY></HTML>

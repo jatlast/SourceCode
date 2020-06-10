@@ -1,0 +1,69 @@
+BODY {
+	FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+TR {
+	FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+A {
+	FONT-SIZE: 9pt; COLOR: #000066; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+SELECT {
+	FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+INPUT {
+	FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+.DefaultFont {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+.DefaultBoldFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+.DefaultSmallFont {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+.SideBarHeaderFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; BACKGROUND-COLOR: #000066
+}
+.TestModeFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #cc6600; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+.SideBarSubHeaderFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #ffffff; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; BACKGROUND-COLOR: #8eacbe
+}
+.HeaderFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; BACKGROUND-COLOR: #efefef
+}
+.MainHeaderFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #000000; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+.SideBarBGColor {
+	BACKGROUND-COLOR: #dae6ed
+}
+.TblHeaderFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; BACKGROUND-COLOR: #cccccc
+}
+.TblSubHeaderFont {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #666666; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; BACKGROUND-COLOR: #dae6ed
+}
+.TblRowFont {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif
+}
+.TblRowFontWithBGColor {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; BACKGROUND-COLOR: #efefef
+}
+.TblContent {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: medium none; PADDING-TOP: 0px; BORDER-BOTTOM: medium none
+}
+A.menu:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: royalblue; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; LETTER-SPACING: 1pt; TEXT-DECORATION: none
+}
+A.menu:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: royalblue; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; LETTER-SPACING: 1pt; TEXT-DECORATION: none
+}
+A.menu:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: skyblue; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; LETTER-SPACING: 1pt; TEXT-DECORATION: none
+}
+A.menu:active {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: royalblue; FONT-FAMILY: Arial, Verdana, Helvetica, Geneva, sans-serif; LETTER-SPACING: 1pt; TEXT-DECORATION: none
+}

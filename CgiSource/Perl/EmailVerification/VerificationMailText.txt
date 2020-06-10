@@ -1,0 +1,65 @@
+Below is your Email Verification Code.
+
+User Name:	jp
+Password:	smithers
+Code:	3-29-2002-19-5-18
+
+There are 4 ways for you to verify your email address using the Code above.
+
+------------- 1 ---------------
+---------- Automatic ----------
+-------------------------------
+  Simply click on the link below to automatically verify your email address...
+  http://10.10.10.19:1900/cgi-bin/ManageEmailVerification.cgi?submit=Verify_My_Email_Address&user_name=jp&password=smithers&email_verification_code=3-29-2002-19-5-18
+
+If this does not work try following the steps below under "Cut and Paste"...
+-------------------------------
+
+
+
+---------------- 2 ----------------
+---------- Cut and Paste ----------
+-----------------------------------
+If you are unable to click on the above address follow the steps below...
+
+	1.  Copy the above link by highlighting it then holding down the Control key then the C key. (Ctrl-C)
+	2.  Past the link into your favorite browser's Address field by holding down the Control key then the V key. (Ctrl-V)
+	3.  Press the Enter key to automatically verify your email address.
+
+If this does not work try following the steps below under "Manually"...
+-------------------------------
+
+
+
+-------------- 3 -------------
+---------- Manually ----------
+------------------------------
+If you are unable to cut and past the link into your browser follow the steps below...
+
+	1.  Log in at following address http://10.10.10.19:1900/index.html which takes you to the Member Home page.
+	2.  From the Member Home page click "Update/Verify Email" under "Update Profile..." which takes you to the Email Verification Form.
+	3.  Put the Email Verification Code into the "Verification Code" field under Option 2.
+	4.  Click the Verify_My_Email_Address button.
+
+If this does not work try following the steps below under "Reply"...
+-------------------------------
+
+
+
+------------ 4 ------------
+---------- Reply ----------
+---------------------------
+If you are unable to use any of the procedures detailed above follow the steps below...
+
+	1.  Reply to this mail
+	2.  Wait for a few hours for the site administrator to verify your email address
+	3.  Log in at following address http://10.10.10.19:1900/index.html to see if your email address has been verified.
+
+-------------------------------
+
+
+
+Thank you,
+
+persianconnections
+jatlast@hotmail.com

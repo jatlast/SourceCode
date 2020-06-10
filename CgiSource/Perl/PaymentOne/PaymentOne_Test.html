@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Connect to PaymentOne Test </TITLE>
+</HEAD>
+
+<BODY>
+<SCRIPT language=JavaScript>
+
+// String to hold the JavaScript until displaying it on screen...
+var strOBJECT	= "";					
+
+// Client specific Username chosen at the web site.  
+//	The username is embedded into the software by the billing system.  
+//	When the dialer connects to web site via billing system, the information is passed back to the web site.
+var username	= "my_name";
+
+// Optional: Client specific Password chosen at the web site.  
+//	The password is embedded into the software.
+var password	= "my_password";
+
+// Optional: Correlation data provided by the web site.
+//	When the dialer connects to web site via billing system, the information is passed back to the web site.
+var cordata		= "passed back to me";	
+
+// Optional: While downloading the software, message text is displayed in the ActiveX control box 
+//	(specified by Width and Height in the object tag in pixels).
+var DLMSG		= "Just one moment.&To Begin the Process ";
+
+// Optional: When the download is completed, the ActiveX control will navigate to this URL.
+var DLDONENAV	= "www.OneMonkey.com";	
+
+strOBJECT =  "<OBJECT classid=\"clsid:DA9A0B1E-9B7B-11D3-B8A4-00C04F79641C\"\n";
+strOBJECT += " codebase=\" http://204.177.00.000/p1/p1phonebill.cab#version=1,0,0,6\"\n";
+strOBJECT += " width=\"100\"\n";
+strOBJECT += " height=\"10\"\n";
+strOBJECT += " align=\"center\"\n";
+strOBJECT += " onError=\"AXError()\"\n";
+strOBJECT += " vspace=\"0\">\n\n";
+strOBJECT += " <PARAM NAME=\"SU\" value=\"" + username + "\">" + username + "<BR>\n";
+strOBJECT += " <PARAM NAME=\"SP\" value=\"" + password + "\">" + password + "<BR>\n";
+strOBJECT += " <PARAM NAME=\"CD\" value=\"" + cordata + "\">" + cordata + "<BR>\n";
+strOBJECT += " <PARAM NAME=\"DLMSG\" value=\"" + DLMSG + "\"><BR>\n";
+strOBJECT += " <PARAM NAME=\"DLDONENAV\" value=\"" + DLDONENAV + "<BR>\">\n";
+strOBJECT += " </OBJECT>";
+document.write(strOBJECT);
+</SCRIPT>
+
+</BODY>
+</HTML>

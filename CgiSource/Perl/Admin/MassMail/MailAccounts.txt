@@ -1,0 +1,15 @@
+Verizon (POP3): mailbox.bellatlantic.net
+Verizon (SMTP): smtpout.verizon.net
+
+
+Email ID:vze2qbjn
+Email Alias: personals.connections@verizon.net
+Password:tie48blo
+
+Email ID:vze2qbjp
+Email Alias: one.monkey@verizon.net
+Password:car95cat
+
+Email ID:vze2qbjq
+Email Alias: connections.admin@verizon.net
+Password:abi9ok

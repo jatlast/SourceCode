@@ -1,0 +1,537 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AdvancedSearch - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP20A.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/AdvancedSearch.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\AdvancedSearch\AdvancedSearch.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP20A.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP20B.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/AdvancedSearch.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\AdvancedSearch.exe" 
+.\Release\AdvancedSearch.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP20B.tmp"
+<h3>Output Window</h3>
+Compiling...
+AdvancedSearch.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+AdvancedSearch.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: CreateLogin - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP20D.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/CreateLogin.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\CreateLogin\CreateLogin.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP20D.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP20E.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/CreateLogin.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\CreateLogin.exe" 
+.\Release\CreateLogin.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP20E.tmp"
+<h3>Output Window</h3>
+Compiling...
+CreateLogin.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+CreateLogin.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: DeleteMail - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP210.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/DeleteMail.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\DeleteMail\DeleteMail.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP210.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP211.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/DeleteMail.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\DeleteMail.exe" 
+.\Release\DeleteMail.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP211.tmp"
+<h3>Output Window</h3>
+Compiling...
+DeleteMail.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+DeleteMail.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GenBookMarks - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP213.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/GenBookMarks.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\GenBookMarks\GenBookMarks.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP213.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP214.tmp" with contents
+[
+TracingAndTimingLib.lib OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/GenBookMarks.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\GenBookMarks.exe" 
+.\Release\GenBookMarks.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP214.tmp"
+<h3>Output Window</h3>
+Compiling...
+GenBookMarks.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+GenBookMarks.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GenHome - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP216.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/GenHome.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\GenHome\GenHome.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP216.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP217.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/GenHome.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\GenHome.exe" 
+.\Release\GenHome.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP217.tmp"
+<h3>Output Window</h3>
+Compiling...
+GenHome.cpp
+Linking...
+LINK : fatal error LNK1104: cannot open file "D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\GenHome.exe"
+Error executing link.exe.
+Creating command line "bscmake.exe /nologo /o"Release/GenHome.bsc"  .\Release\GenHome.sbr"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+GenHome.exe - 1 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GenInbox - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP218.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/GenInbox.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\GenInbox\GenInbox.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP218.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP219.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/GenInbox.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\GenInbox.exe" 
+.\Release\GenInbox.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP219.tmp"
+<h3>Output Window</h3>
+Compiling...
+GenInbox.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+GenInbox.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GenOutbox - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP21B.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/GenOutbox.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\GenOutbox\GenOutbox.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP21B.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP21C.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/GenOutbox.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\GenOutbox.exe" 
+.\Release\GenOutbox.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP21C.tmp"
+<h3>Output Window</h3>
+Compiling...
+GenOutbox.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+GenOutbox.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GenPicUpload - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP21E.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/GenPicUpload.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\GenPicUpload\GenPicUpload.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP21E.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP21F.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/GenPicUpload.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\GenPicUpload.exe" 
+.\Release\GenPicUpload.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP21F.tmp"
+<h3>Output Window</h3>
+Compiling...
+GenPicUpload.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+GenPicUpload.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: GenSendMail - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP221.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/GenSendMail.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\GenSendMail\GenSendMail.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP221.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP222.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/GenSendMail.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\GenSendMail.exe" 
+.\Release\GenSendMail.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP222.tmp"
+<h3>Output Window</h3>
+Compiling...
+GenSendMail.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+GenSendMail.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: HideUnhideProfile - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP224.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/HideUnhideProfile.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\HideUnhideProfile\HideUnhideProfile.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP224.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP225.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/HideUnhideProfile.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\HideUnhideProfile.exe" 
+.\Release\HideUnhideProfile.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP225.tmp"
+<h3>Output Window</h3>
+Compiling...
+HideUnhideProfile.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+HideUnhideProfile.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LogIn - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP227.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/LogIn.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\LogIn\LogIn.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP227.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP228.tmp" with contents
+[
+TracingAndTimingLib.lib OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/LogIn.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\LogIn.exe" 
+.\Release\LogIn.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP228.tmp"
+<h3>Output Window</h3>
+Compiling...
+LogIn.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+LogIn.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: LogInHelp - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP22A.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/LogInHelp.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\LogInHelp\LogInHelp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP22A.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP22B.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/LogInHelp.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\LogInHelp.exe" 
+.\Release\LogInHelp.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP22B.tmp"
+<h3>Output Window</h3>
+Compiling...
+LogInHelp.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+LogInHelp.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: ReadMail - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP22D.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/ReadMail.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\ReadMail\ReadMail.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP22D.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP22E.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/ReadMail.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\ReadMail.exe" 
+.\Release\ReadMail.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP22E.tmp"
+<h3>Output Window</h3>
+Compiling...
+ReadMail.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ReadMail.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SimpleSearch - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP230.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/SimpleSearch.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\SimpleSearch\SimpleSearch.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP230.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP231.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/SimpleSearch.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\SimpleSearch.exe" 
+.\Release\SimpleSearch.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP231.tmp"
+<h3>Output Window</h3>
+Compiling...
+SimpleSearch.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+SimpleSearch.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: SingleProfile - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP233.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/SingleProfile.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\SingleProfile\SingleProfile.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP233.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP234.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/SingleProfile.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\SingleProfile.exe" 
+.\Release\SingleProfile.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP234.tmp"
+<h3>Output Window</h3>
+Compiling...
+SingleProfile.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+SingleProfile.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: UpdateAbout - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP236.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/UpdateAbout.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\UpdateAbout\UpdateAbout.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP236.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP237.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/UpdateAbout.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\UpdateAbout.exe" 
+.\Release\UpdateAbout.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP237.tmp"
+<h3>Output Window</h3>
+Compiling...
+UpdateAbout.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+UpdateAbout.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: UpdateBilling - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP239.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/UpdateBilling.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\UpdateBilling\UpdateBilling.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP239.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP23A.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/UpdateBilling.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\UpdateBilling.exe" 
+.\Release\UpdateBilling.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP23A.tmp"
+<h3>Output Window</h3>
+Compiling...
+UpdateBilling.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+UpdateBilling.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: UpdateBookMarks - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP23C.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/UpdateBookMarks.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\UpdateBookMarks\UpdateBookMarks.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP23C.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP23D.tmp" with contents
+[
+gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib user32.lib OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/UpdateBookMarks.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\UpdateBookMarks.exe" 
+.\Release\UpdateBookMarks.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP23D.tmp"
+<h3>Output Window</h3>
+Compiling...
+UpdateBookMarks.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+UpdateBookMarks.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: UpdateContact - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP23F.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/UpdateContact.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\UpdateContact\UpdateContact.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP23F.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP240.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/UpdateContact.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\UpdateContact.exe" 
+.\Release\UpdateContact.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP240.tmp"
+<h3>Output Window</h3>
+Compiling...
+UpdateContact.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+UpdateContact.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: UpdateLogin - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP242.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/UpdateLogin.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\UpdateLogin\UpdateLogin.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP242.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP243.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/UpdateLogin.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\UpdateLogin.exe" 
+.\Release\UpdateLogin.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP243.tmp"
+<h3>Output Window</h3>
+Compiling...
+UpdateLogin.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+UpdateLogin.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: UpdatePersonal - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP245.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/UpdatePersonal.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\UpdatePersonal\UpdatePersonal.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP245.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP246.tmp" with contents
+[
+OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB TracingAndTimingLib.lib kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/UpdatePersonal.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\UpdatePersonal.exe" 
+.\Release\UpdatePersonal.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP246.tmp"
+<h3>Output Window</h3>
+Compiling...
+UpdatePersonal.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+UpdatePersonal.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

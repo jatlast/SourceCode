@@ -1,0 +1,92 @@
+################################## USER ######################################
+#                      LinkMap.dat Usage Directions
+#
+#  1. LinkMap.dat is a configuration file containing Key/Value pairs
+#  2. Left  column = Key
+#  3. Right column = Value
+#  4. No spaces are allowed in neither Keys nor Values
+#  5. Lines beginning with the Number Sign (#) are ignored
+#  6. Each group of Key/Value pairs should have a title decribing its purpose
+#
+#			Last updated on: 3/26/2002 19:57:1
+#
+###############################################################################
+
+# KEY			VALUE
+
+######### Debugging #############
+SYSTEM			persianconnections_Cgi_User
+
+######### Database Login #############
+DBNAME			SMITHERS
+DBUSER			Persian
+DBPWD			citrix
+
+######### URLs #############
+ROOT			http://www.BibleMatch.com
+IMAGES			http://www.BibleMatch.com/images
+PICTURES		http://www.BibleMatch.com/Pictures
+CGIBIN			http://www.BibleMatch.com/cgi-bin
+
+######### Web Page Colors #############
+HTML_POPUP_BGCOLOR	#BDD2D2
+HTML_HEADFOOT_BGCOLOR	#BDD2D2
+HTML_NAV_BGCOLOR	#F5F5E3
+HTML_BODY_BGCOLOR	#D1D1BF
+
+INBOX_COLOR_1		white
+INBOX_COLOR_2		#c0c0c0
+OUTBOX_COLOR_1		white
+OUTBOX_COLOR_2		#c0c0c0
+
+######### Web Page Text #############
+HTML_TITLE 		Connecitons_Dev
+HTML_HEAD		<strong>persianconnections</strong>
+COPYRIGHT_YEAR		2000-2002
+EMAIL			jatlast@yahoo.com
+WHICH_CONNECTIONS 	persianconnections
+
+######### Icon Names #############
+FIRSTARROW		nav_first.gif
+NEXTARROW		nav_next.gif
+PREVIOUSARROW		nav_previous.gif
+LASTARROW		nav_last.gif
+
+LOGO			persianconnections_logo_withtag.gif
+
+NO_PIC_SMALL		photo_not_available_60x60.gif
+NO_PIC_MEDIUM		photo_not_available_120x120.gif
+NO_PIC_LARGE		photo_not_available_180x180.gif
+
+EMAILSYMBOL		Email.jpg
+DELETSYMBOL		DeleteMailX.gif
+BOOKMARKSYMBOL		pushpin2.gif
+UNREADSYMBOL		redhart.gif
+LINESYMBOL		line.gif
+SPACESYMBOL		sp1.gif
+PROCESSINGSYMBOL	processing.gif
+
+BECOME_PREMIUM_MEMBER	become_premium_member_now.gif
+BECOME_MEMBER_GIF	become_a_premium_member_now.gif
+
+######### Blat #############
+SMTP_HOST		10.10.10.5
+BLAT_PATH		D:/Required
+
+######### CC Processing Test/Live Switch #############
+# 0 = Live
+# 1 = Test
+AUTHORIZE_TEST_MODE	1
+
+######### Membership Prices #############
+PRICE_ONE		9.99
+PRICE_THREE		19.99
+PRICE_TWELVE		69.99
+PRICE_LIFETIME		199.99
+
+######### Local Paths #############
+LOG_FOLDER		D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\admin\Log
+PICTURES_FOLDER		D:/MyData/Personal/Projects/Connections/PersianConnectionsWebDev/Pictures/
+DOS_PICTURES_FOLDER	D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\Pictures\
+
+######### Rotating Gifs (Not used) #############

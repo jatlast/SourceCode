@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GenBookMarks - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP156.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/GenBookMarks.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\CgiSource\Cpp\GenBookMarks\GenBookMarks.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP156.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP157.tmp" with contents
+[
+TracingAndTimingLib.lib OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB kernel32.lib cgicc.lib libsybdb.lib Connections_TemplatesLib.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Release/GenBookMarks.pdb" /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\GenBookMarks.exe" 
+.\Release\GenBookMarks.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP157.tmp"
+<h3>Output Window</h3>
+Compiling...
+GenBookMarks.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+GenBookMarks.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

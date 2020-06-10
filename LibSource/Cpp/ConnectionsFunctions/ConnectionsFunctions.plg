@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ConnectionsFunctions - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP44.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ConnectionsFunctions.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\MyData\Personal\Projects\Connections\SourceCode\LibSource\Cpp\ConnectionsFunctions\Driver.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP44.tmp" 
+Creating temporary file "C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP45.tmp" with contents
+[
+user32.lib TracingAndTimingLib.lib OLDNAMES.LIB LIBCPD.LIB LIBC.LIB LIBCD.LIB kernel32.lib cgicc.lib libsybdb.lib ConnectionsFunctionsLib.lib DB_Table_BaseLib.lib LinkMapLib.lib AddJavaScriptLib.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ConnectionsFunctions.pdb" /debug /machine:I386 /nodefaultlib /out:"D:\MyData\Personal\Projects\Connections\PersianConnectionsWebDev\cgi-bin\ConnectionsFunctions.exe" /pdbtype:sept 
+.\Debug\Driver.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\baumbach\LOCALS~1\Temp\RSP45.tmp"
+<h3>Output Window</h3>
+Compiling...
+Driver.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ConnectionsFunctions.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
